@@ -9,7 +9,9 @@ Which of the following are ways to create a String object with value "Hello Worl
 
 <details><summary><b>Answer</b></summary>
 <p>
+
 `NameError (undefined local variable or method 'a' for main:Object)`
+
 </p>
 </details>
 
