@@ -106,7 +106,7 @@ What is returned from executing the following statement? `10 % 2`
 <details><summary><b>Answer</b></summary>
 <p>
 
-`2.5`
+`0`
 
 </p>
 </details>
