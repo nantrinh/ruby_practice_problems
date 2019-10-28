@@ -25,7 +25,7 @@ Given `name = "Frodo"`, write a `puts` statement that outputs `"My dog is named 
 
 ---
 
-Create a symbol named abc using the literal constructor.
+Create a symbol named `abc` using the literal constructor.
 
 <details><summary><b>Answer</b></summary>
 <p>
