@@ -12,7 +12,116 @@ Which of the following are ways to create a String object with value "Hello Worl
 Answer: `NameError (undefined local variable or method 'a' for main:Object)`
 </p>
 </details>
+
 ---
+
+Given `name = "Frodo"`, write a puts statement that outputs `"My dog is named Frodo."` Use string interpolation.
+
+<details><summary><b>Answer</b></summary>
+<p>
+Answer: ``
+</p>
+</details>
+
+---
+
+Create a symbol named abc using the literal constructor.
+
+<details><summary><b>Answer</b></summary>
+<p>
+Answer: ``
+</p>
+</details>
+
+---
+
+What is returned from executing the following statement? `1 + 2`
+
+<details><summary><b>Answer</b></summary>
+<p>
+Answer: ``
+</p>
+</details>
+
+---
+
+What is returned from executing the following statement? `1 * 2`
+
+<details><summary><b>Answer</b></summary>
+<p>
+Answer: ``
+</p>
+</details>
+
+---
+
+What is returned from executing the following statement? `5 / 2`
+
+<details><summary><b>Answer</b></summary>
+<p>
+Answer: ``
+</p>
+</details>
+
+---
+
+What is returned from executing the following statement? `5 / 2.0`
+
+<details><summary><b>Answer</b></summary>
+<p>
+Answer: ``
+</p>
+</details>
+
+---
+
+What is returned from executing the following statement? `5.0 / 2.0`
+
+<details><summary><b>Answer</b></summary>
+<p>
+Answer: ``
+</p>
+</details>
+
+---
+
+What is returned from executing the following statement? `10 % 2`
+
+<details><summary><b>Answer</b></summary>
+<p>
+Answer: ``
+</p>
+</details>
+
+---
+
+What is returned from executing the following statement? `10 % 3`
+
+<details><summary><b>Answer</b></summary>
+<p>
+Answer: ``
+</p>
+</details>
+
+---
+
+
+What is output from executing the following statement? `puts "Hello World"`
+What is returned from executing the following statement? `puts "Hello World"`
+What is returned from executing the following statement? `"Hello World".nil?`
+What is returned from executing the following statement? `0.nil?`
+What is returned from executing the following statement? `"".nil?`
+What is returned from executing the following statement? `false.nil?`
+Create an array using the literal constructor consisting of the elements `a`, `b`, and `c`. Assign it to the local variable `arr`.
+Create a hash using the literal constructor with the key and value pairs (`one`, `1`), (`two`, `2`), and (`three`, `3`). Assign it to the local variable `hsh`.
+What is output from executing the following statement? `puts [1, 2, 3]`
+What is output from executing the following statement? `puts [1, 2, 3].inspect`
+What is output from executing the following statement? `p [1, 2, 3]`
+Write a statement that converts the integer `1` to its string representation.
+Write a statement that converts the string `"1230"` to its integer representation. 
+What is returned from executing the following statement? `"123.5".to_f"`
+What is returned from executing the following statement? `"001230".to_i"`
+What is returned from executing the following statement? `"123ab23".to_i"`
 
 ###### 1. What's the output?
 
