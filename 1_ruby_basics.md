@@ -285,7 +285,7 @@ Write a statement that converts the string `"1230"` to its integer representatio
 
 ---
 
-What is returned from executing the following statement? `"123.5".to_f"`
+What is returned from executing the following statement? `"123.5".to_f`
 
 <details><summary><b>Answer</b></summary>
 <p>
@@ -297,7 +297,7 @@ What is returned from executing the following statement? `"123.5".to_f"`
 
 ---
 
-What is returned from executing the following statement? `"001230".to_i"`
+What is returned from executing the following statement? `"001230".to_i`
 
 <details><summary><b>Answer</b></summary>
 <p>
@@ -309,7 +309,7 @@ What is returned from executing the following statement? `"001230".to_i"`
 
 ---
 
-What is returned from executing the following statement? `"123ab23".to_i"`
+What is returned from executing the following statement? `"123ab23".to_i`
 
 <details><summary><b>Answer</b></summary>
 <p>
