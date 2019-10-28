@@ -22,7 +22,7 @@ Given `name = "Frodo"`, write a `puts` statement that outputs `"My dog is named 
 <details><summary><b>Answer</b></summary>
 <p>
 
-`puts "My dog is named #{name}.`
+`puts "My dog is named #{name}."`
 
 </p>
 </details>
