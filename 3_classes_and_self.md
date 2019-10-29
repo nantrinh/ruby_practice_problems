@@ -14,14 +14,14 @@ puts bob.name
 <details><summary><b>Answer</b></summary>
 <p>
 
-`"Bob"`
+`NoMethodError (undefined method 'name' for #<Person:0x0000556cd4875960 @name="Bob">)`
 
 </p>
 </details>
 
 ---
 
-Which of the following modifications would cause the code to output `"Bob"`? Mark all that apply.
+2. Which of the following modifications would cause the code to output `"Bob"`? Mark all that apply.
 ```
 class Person
   def initialize(name)
@@ -48,7 +48,7 @@ A, C, D
 
 ---
 
-What kind of variable is `@name`?
+3. What kind of variable is `@name`?
 <details><summary><b>Answer</b></summary>
 <p>
 
@@ -59,7 +59,7 @@ instance variable
 
 ---
 
-What kind of variable is `@@name`?
+4. What kind of variable is `@@name`?
 <details><summary><b>Answer</b></summary>
 <p>
 
@@ -70,7 +70,7 @@ class variable
 
 ---
 
-What does the following code output? 
+5. What does the following code output? 
 ```
 class Person
   @@counter = 0
@@ -104,7 +104,7 @@ NoMethodError (undefined method 'counter' for #<Person:0x00005594bb47adb0 @name=
 
 ---
 
-What does the following code output?
+6. What does the following code output?
 ```
 class Animal
   def speak
@@ -130,7 +130,7 @@ Cow.new.speak
 
 ---
 
-What is the term for what is happening here?
+7. What is the term for what is happening here?
 ```
 class Animal
   def speak
@@ -156,7 +156,7 @@ Method overriding
 
 ---
 
-Which of the following modifications would cause the code to output `100`? Mark all that apply.
+8. Which of the following modifications would cause the code to output `100`? Mark all that apply.
 ```
 class BankAccount 
   attr_reader :amount
@@ -179,14 +179,14 @@ F. Define a method `def amount=(value); @amount = value; end`
 <details><summary><b>Answer</b></summary>
 <p>
 
-B, D, F
+C, D, F
 
 </p>
 </details>
 
 ---
 
-What does the following code output?
+9. What does the following code output?
 ```
 class LivingThing
 end
@@ -218,7 +218,7 @@ p Bengal.ancestors
 
 ---
 
-What does the following code output?
+10. What does the following code output?
 ```
 class LivingThing
 end
@@ -243,14 +243,14 @@ p Plant.ancestors
 <details><summary><b>Answer</b></summary>
 <p>
 
-``
+`[Plant, LivingThing, Object, Kernel, BasicObject]`
 
 </p>
 </details>
 
 ---
 
-What does the following code output?
+11. What does the following code output?
 ```
 class Cat
   def initialize(name)
@@ -267,14 +267,14 @@ C. A string representation of the calling object (e.g., `#<Cat:0x0000561e68d7769
 <details><summary><b>Answer</b></summary>
 <p>
 
-``
+C
 
 </p>
 </details>
 
 ---
 
-What does the following code output?
+12. What does the following code output?
 ```
 class Cat
   def initialize(name)
@@ -295,14 +295,14 @@ C. A string representation of the calling object (e.g., `#<Cat:0x0000561e68d7769
 <details><summary><b>Answer</b></summary>
 <p>
 
-``
+A
 
 </p>
 </details>
 
 ---
 
-What does the following code output?
+13. What does the following code output?
 ```
 class Cat
   def initialize(name)
@@ -330,14 +330,14 @@ D. `"I am a Bengal and my name is #{@name}."`
 <details><summary><b>Answer</b></summary>
 <p>
 
-``
+D
 
 </p>
 </details>
 
 ---
 
-What does the following code output?
+14. What does the following code output?
 ```
 class Cat
   def initialize(name)
@@ -358,14 +358,17 @@ puts rosie.fly
 <details><summary><b>Answer</b></summary>
 <p>
 
-``
+```
+"I can fly!"
+NoMethodError (undefined method `fly' for #<Cat:0x00005594bb468160 @name="Rosie">)
+```
 
 </p>
 </details>
 
 ---
 
-What does `self` refer to in the following code? 
+15. What does `self` refer to in the following code? 
 ```
 class Person
   @@counter = 0
@@ -382,14 +385,14 @@ end
 <details><summary><b>Answer</b></summary>
 <p>
 
-``
+the `Person` class
 
 </p>
 </details>
 
 ---
 
-What does `self` refer to in the following code? 
+16. What does `self` refer to in the following code? 
 ```
 class Person
   def initialize(name)
@@ -404,14 +407,14 @@ end
 <details><summary><b>Answer</b></summary>
 <p>
 
-``
+the calling object (an instance of the `Person` class)
 
 </p>
 </details>
 
 ---
 
-What does `self` refer to in the following code? 
+17. What does `self` refer to in the following code? 
 ```
 class Person
   self
@@ -421,3 +424,10 @@ class Person
   end
 end
 ``` 
+<details><summary><b>Answer</b></summary>
+<p>
+
+the `Person` class
+
+</p>
+</details>
