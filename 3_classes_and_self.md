@@ -263,7 +263,7 @@ puts gemma
 ```
 - A. `"Gemma"`
 - B. `NoMethodError`
-- C. A string representation of the calling object (e.g., `#<Cat:0x0000561e68d77698>`
+- C. A string representation of the calling object (e.g., `#<Cat:0x0000561e68d77698>`)
 <details><summary><b>Answer</b></summary>
 <p>
 
@@ -291,7 +291,7 @@ puts gemma
 ```
 - A. `"Gemma"`
 - B. `NoMethodError`
-- C. A string representation of the calling object (e.g., `#<Cat:0x0000561e68d77698>`
+- C. A string representation of the calling object (e.g., `#<Cat:0x0000561e68d77698>`)
 <details><summary><b>Answer</b></summary>
 <p>
 
@@ -325,7 +325,7 @@ puts gemma
 ```
 - A. `"Gemma"`
 - B. `NoMethodError`
-- C. A string representation of the calling object (e.g., `#<Cat:0x0000561e68d77698>`
+- C. A string representation of the calling object (e.g., `#<Cat:0x0000561e68d77698>`)
 - D. `"I am a Bengal and my name is #{@name}."`
 <details><summary><b>Answer</b></summary>
 <p>
