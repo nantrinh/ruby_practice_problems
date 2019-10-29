@@ -305,25 +305,22 @@ a = 5
     end
 end
 ```
-A. Variable `a` is accessible at the main level.
-B. Variable `b` is accessible at the main level.
-C. Variable `c` is accessible at the main level.
-D. Variable `d` is accessible at the main level.
-
-E. Variable `a` is accessible at level 1.
-F. Variable `b` is accessible at level 1.
-G. Variable `c` is accessible at level 1.
-H. Variable `d` is accessible at level 1.
-
-I. Variable `a` is accessible at level 2.
-J. Variable `b` is accessible at level 2.
-K. Variable `c` is accessible at level 2.
-L. Variable `d` is accessible at level 2.
-
-M. Variable `a` is accessible at level 3.
-N. Variable `b` is accessible at level 3.
-O. Variable `c` is accessible at level 3.
-P. Variable `d` is accessible at level 3.
+- A. Variable `a` is accessible at the main level.
+- B. Variable `b` is accessible at the main level.
+- C. Variable `c` is accessible at the main level.
+- D. Variable `d` is accessible at the main level.
+- E. Variable `a` is accessible at level 1.
+- F. Variable `b` is accessible at level 1.
+- G. Variable `c` is accessible at level 1.
+- H. Variable `d` is accessible at level 1.
+- I. Variable `a` is accessible at level 2.
+- J. Variable `b` is accessible at level 2.
+- K. Variable `c` is accessible at level 2.
+- L. Variable `d` is accessible at level 2.
+- M. Variable `a` is accessible at level 3.
+- N. Variable `b` is accessible at level 3.
+- O. Variable `c` is accessible at level 3.
+- P. Variable `d` is accessible at level 3.
 
 <details><summary><b>Answer</b></summary>
 <p>
