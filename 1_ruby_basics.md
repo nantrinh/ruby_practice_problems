@@ -1,6 +1,6 @@
 # Ruby Basics
 
-Which of the following are ways to create a String object with value "Hello World"? Select all that apply.
+1. Which of the following are ways to create a String object with value "Hello World"? Select all that apply.
 - A: `"Hello World"`
 - B: `String.new("Hello World")`
 - C: `'Hello World'`
@@ -17,7 +17,7 @@ A, B, C
 
 ---
 
-Given `name = "Frodo"`, write a `puts` statement that outputs `"My dog is named Frodo."` Use string interpolation.
+2. Given `name = "Frodo"`, write a `puts` statement that outputs `"My dog is named Frodo."` Use string interpolation.
 
 <details><summary><b>Answer</b></summary>
 <p>
@@ -29,7 +29,7 @@ Given `name = "Frodo"`, write a `puts` statement that outputs `"My dog is named 
 
 ---
 
-Create a symbol named `abc` using the literal constructor.
+3. Create a symbol named `abc` using the literal constructor.
 
 <details><summary><b>Answer</b></summary>
 <p>
@@ -41,7 +41,7 @@ Create a symbol named `abc` using the literal constructor.
 
 ---
 
-What is returned from executing the following statement? `1 + 2`
+4. What is returned from executing the following statement? `1 + 2`
 
 <details><summary><b>Answer</b></summary>
 <p>
@@ -53,7 +53,7 @@ What is returned from executing the following statement? `1 + 2`
 
 ---
 
-What is returned from executing the following statement? `1 * 2`
+5. What is returned from executing the following statement? `1 * 2`
 
 <details><summary><b>Answer</b></summary>
 <p>
@@ -65,7 +65,7 @@ What is returned from executing the following statement? `1 * 2`
 
 ---
 
-What is returned from executing the following statement? `5 / 2`
+6. What is returned from executing the following statement? `5 / 2`
 
 <details><summary><b>Answer</b></summary>
 <p>
@@ -77,7 +77,7 @@ What is returned from executing the following statement? `5 / 2`
 
 ---
 
-What is returned from executing the following statement? `5 / 2.0`
+7. What is returned from executing the following statement? `5 / 2.0`
 
 <details><summary><b>Answer</b></summary>
 <p>
@@ -89,7 +89,7 @@ What is returned from executing the following statement? `5 / 2.0`
 
 ---
 
-What is returned from executing the following statement? `5.0 / 2.0`
+8. What is returned from executing the following statement? `5.0 / 2.0`
 
 <details><summary><b>Answer</b></summary>
 <p>
@@ -101,7 +101,7 @@ What is returned from executing the following statement? `5.0 / 2.0`
 
 ---
 
-What is returned from executing the following statement? `10 % 2`
+9. What is returned from executing the following statement? `10 % 2`
 
 <details><summary><b>Answer</b></summary>
 <p>
@@ -113,7 +113,7 @@ What is returned from executing the following statement? `10 % 2`
 
 ---
 
-What is returned from executing the following statement? `10 % 3`
+10. What is returned from executing the following statement? `10 % 3`
 
 <details><summary><b>Answer</b></summary>
 <p>
@@ -125,7 +125,7 @@ What is returned from executing the following statement? `10 % 3`
 
 ---
 
-What is output from executing the following statement? `puts "Hello World"`
+11. What is output from executing the following statement? `puts "Hello World"`
 
 <details><summary><b>Answer</b></summary>
 <p>
@@ -137,7 +137,7 @@ What is output from executing the following statement? `puts "Hello World"`
 
 ---
 
-What is returned from executing the following statement? `puts "Hello World"`
+12. What is returned from executing the following statement? `puts "Hello World"`
 
 <details><summary><b>Answer</b></summary>
 <p>
@@ -149,7 +149,7 @@ What is returned from executing the following statement? `puts "Hello World"`
 
 ---
 
-What is returned from executing the following statement? `"Hello World".nil?`
+13. What is returned from executing the following statement? `"Hello World".nil?`
 
 <details><summary><b>Answer</b></summary>
 <p>
@@ -161,7 +161,7 @@ What is returned from executing the following statement? `"Hello World".nil?`
 
 ---
 
-What is returned from executing the following statement? `0.nil?`
+14. What is returned from executing the following statement? `0.nil?`
 
 <details><summary><b>Answer</b></summary>
 <p>
@@ -173,7 +173,7 @@ What is returned from executing the following statement? `0.nil?`
 
 ---
 
-What is returned from executing the following statement? `"".nil?`
+15. What is returned from executing the following statement? `"".nil?`
 
 <details><summary><b>Answer</b></summary>
 <p>
@@ -185,7 +185,7 @@ What is returned from executing the following statement? `"".nil?`
 
 ---
 
-What is returned from executing the following statement? `false.nil?`
+16. What is returned from executing the following statement? `false.nil?`
 
 <details><summary><b>Answer</b></summary>
 <p>
@@ -197,7 +197,7 @@ What is returned from executing the following statement? `false.nil?`
 
 ---
 
-Create an array using the literal constructor consisting of the elements `"a"`, `"b"`, and `"c"`. Assign it to the local variable `arr`.
+17. Create an array using the literal constructor consisting of the elements `"a"`, `"b"`, and `"c"`. Assign it to the local variable `arr`.
 
 <details><summary><b>Answer</b></summary>
 <p>
@@ -209,7 +209,7 @@ Create an array using the literal constructor consisting of the elements `"a"`, 
 
 ---
 
-Create a hash using the literal constructor with the key and value pairs (`"one"`, `1`), (`"two"`, `2`), and (`"three"`, `3`). Assign it to the local variable `integers`.
+18. Create a hash using the literal constructor with the key and value pairs (`"one"`, `1`), (`"two"`, `2`), and (`"three"`, `3`). Assign it to the local variable `integers`.
 
 <details><summary><b>Answer</b></summary>
 <p>
@@ -221,7 +221,7 @@ Create a hash using the literal constructor with the key and value pairs (`"one"
 
 ---
 
-What is output from executing the following statement? `puts [1, 2, 3]`
+19. What is output from executing the following statement? `puts [1, 2, 3]`
 
 <details><summary><b>Answer</b></summary>
 <p>
@@ -237,7 +237,7 @@ What is output from executing the following statement? `puts [1, 2, 3]`
 
 ---
 
-What is output from executing the following statement? `puts [1, 2, 3].inspect`
+20. What is output from executing the following statement? `puts [1, 2, 3].inspect`
 
 <details><summary><b>Answer</b></summary>
 <p>
@@ -249,7 +249,7 @@ What is output from executing the following statement? `puts [1, 2, 3].inspect`
 
 ---
 
-What is output from executing the following statement? `p [1, 2, 3]`
+21. What is output from executing the following statement? `p [1, 2, 3]`
 
 <details><summary><b>Answer</b></summary>
 <p>
@@ -261,7 +261,7 @@ What is output from executing the following statement? `p [1, 2, 3]`
 
 ---
 
-Write a statement that converts the integer `1` to its string representation.
+22. Write a statement that converts the integer `1` to its string representation.
 
 <details><summary><b>Answer</b></summary>
 <p>
@@ -273,7 +273,7 @@ Write a statement that converts the integer `1` to its string representation.
 
 ---
 
-Write a statement that converts the string `"1230"` to its integer representation. 
+23. Write a statement that converts the string `"1230"` to its integer representation. 
 
 <details><summary><b>Answer</b></summary>
 <p>
@@ -285,7 +285,7 @@ Write a statement that converts the string `"1230"` to its integer representatio
 
 ---
 
-What is returned from executing the following statement? `"123.5".to_f`
+24. What is returned from executing the following statement? `"123.5".to_f`
 
 <details><summary><b>Answer</b></summary>
 <p>
@@ -297,7 +297,7 @@ What is returned from executing the following statement? `"123.5".to_f`
 
 ---
 
-What is returned from executing the following statement? `"001230".to_i`
+25. What is returned from executing the following statement? `"001230".to_i`
 
 <details><summary><b>Answer</b></summary>
 <p>
@@ -309,7 +309,7 @@ What is returned from executing the following statement? `"001230".to_i`
 
 ---
 
-What is returned from executing the following statement? `"123ab23".to_i`
+26. What is returned from executing the following statement? `"123ab23".to_i`
 
 <details><summary><b>Answer</b></summary>
 <p>
