@@ -170,12 +170,12 @@ new_account = BankAccount.new(10)
 new_account.amount = 100
 puts new_account.amount
 ```
-A. No modification is needed.
-B. Change `attr_reader` to `attr_writer` 
-C. Change `attr_reader` to `attr_accessor`
-D. Add `attr_writer :amount`
-E. Define a method `def amount(value); @amount = value; end`
-F. Define a method `def amount=(value); @amount = value; end`
+- A. No modification is needed.
+- B. Change `attr_reader` to `attr_writer` 
+- C. Change `attr_reader` to `attr_accessor`
+- D. Add `attr_writer :amount`
+- E. Define a method `def amount(value); @amount = value; end`
+- F. Define a method `def amount=(value); @amount = value; end`
 <details><summary><b>Answer</b></summary>
 <p>
 
@@ -261,9 +261,9 @@ end
 gemma = Cat.new("Gemma")
 puts gemma
 ```
-A. `"Gemma"`
-B. `NoMethodError`
-C. A string representation of the calling object (e.g., `#<Cat:0x0000561e68d77698>`
+- A. `"Gemma"`
+- B. `NoMethodError`
+- C. A string representation of the calling object (e.g., `#<Cat:0x0000561e68d77698>`
 <details><summary><b>Answer</b></summary>
 <p>
 
@@ -289,9 +289,9 @@ end
 gemma = Cat.new("Gemma")
 puts gemma
 ```
-A. `"Gemma"`
-B. `NoMethodError`
-C. A string representation of the calling object (e.g., `#<Cat:0x0000561e68d77698>`
+- A. `"Gemma"`
+- B. `NoMethodError`
+- C. A string representation of the calling object (e.g., `#<Cat:0x0000561e68d77698>`
 <details><summary><b>Answer</b></summary>
 <p>
 
@@ -323,10 +323,10 @@ end
 gemma = Bengal.new("Gemma")
 puts gemma
 ```
-A. `"Gemma"`
-B. `NoMethodError`
-C. A string representation of the calling object (e.g., `#<Cat:0x0000561e68d77698>`
-D. `"I am a Bengal and my name is #{@name}."`
+- A. `"Gemma"`
+- B. `NoMethodError`
+- C. A string representation of the calling object (e.g., `#<Cat:0x0000561e68d77698>`
+- D. `"I am a Bengal and my name is #{@name}."`
 <details><summary><b>Answer</b></summary>
 <p>
 
