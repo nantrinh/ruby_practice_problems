@@ -29,14 +29,19 @@ def label_code_snippets(text, language="ruby")
   modified
 end
 
-# Read in all of the file as a string
-filename = "7_temp"
-f = File.new("#{filename}.md")
-text = f.read
+def format_file(filename)
+  # Read in all of the file as a string
+  f = File.new("#{filename}.md")
+  text = f.read
+  
+  numbered_with_answer_templates  = number_questions_and_add_answer_templates(text)
+  code_labeled = label_code_snippets(numbered_with_answer_templates)
+  
+  # Write file
+  new_file = File.new("#{filename}_modified.md", 'w')
+  new_file.puts code_labeled
+end
 
-numbered_with_answer_templates  = number_questions_and_add_answer_templates(text)
-code_labeled = label_code_snippets(numbered_with_answer_templates)
-
-# Write file
-new_file = File.new("#{filename}_modified.md", 'w')
-new_file.puts code_labeled
+[*8..15].each do |n|
+  format_file("section_#{n}_questions")
+end
