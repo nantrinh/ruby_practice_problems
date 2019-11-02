@@ -1,6 +1,6 @@
 # Ruby Practice Problems
 
-I created 346 questions to review Ruby syntax and concepts covered in _The Well Grounded Rubyist_ by David Black. I tried to focus on quality versus quantity. Each question tests a specific concept in the book.
+I created 346 questions to review Ruby syntax and concepts covered in _The Well Grounded Rubyist_ by David Black. Each question tests a specific concept in the book.
 
 Some questions are designed to raise errors. The answers listed for those questions would be the appropriate error (e.g., `NameError`, `ArgumentError`).
 
@@ -10,14 +10,14 @@ I would like to thank:
 - [ekalinin](https://github.com/ekalinin/github-markdown-toc) for automatic table of contents generation 
 
 # Table of Contents
-* [Ruby basics](#ruby-basics)
-* [Objects, methods, and local variables](#objects-methods-and-local-variables)
-* [Classes and `self`](#classes-and-self)
-* [Modules, `super`, and constant resolution](#modules-super-and-constant-resolution)
-* [Private and protected methods](#private-and-protected-methods)
-* [`if`, `else`, and `case`](#if-else-and-case)
+* [Ruby Basics](#ruby-basics)
+* [Objects, Methods, and Local Variables](#objects-methods-and-local-variables)
+* [Classes and self](#classes-and-self)
+* [Modules, super, and Constant Resolution](#modules-super-and-constant-resolution)
+* [Private and Protected Methods](#private-and-protected-methods)
+* [if, else, and case](#if-else-and-case)
 
-# Ruby basics
+# Ruby Basics
 
 1. Which of the following are ways to create a String object with value "Hello World"? Select all that apply.
 - A: `"Hello World"`
@@ -338,7 +338,7 @@ A, B, C
 </p>
 </details>
 
-# Objects, methods, and local variables 
+# Objects, Methods, and Local Variables 
 
 1. What does the following code output?
 ```
@@ -1150,7 +1150,7 @@ the `Person` class
 </p>
 </details>
 
-# Modules, `super`, and constant resolution
+# Modules, `super`, and Constant Resolution
 
 1. Which of the following modifications would cause the code to output `"I am breathing"`? Select all that apply.
 ```
@@ -1598,7 +1598,7 @@ puts SubAbc.new.message
 </p>
 </details>
 
-# Private and protected methods
+# Private and Protected Methods
 1. Methods in a class are \_______ by default.
 - A. public
 - B. private
