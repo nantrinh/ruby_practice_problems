@@ -1,15 +1,23 @@
-I created 346 questions to review Ruby syntax and concepts covered in _The Well Grounded Rubyist_ by David Black. I tried to focus on quality versus quantity. Each question tests a specific concept in the book. If you are have read the book, you may notice that some questions are drawn directly from examples in the book.
+# Ruby Practice Problems
+
+I created 346 questions to review Ruby syntax and concepts covered in _The Well Grounded Rubyist_ by David Black. I tried to focus on quality versus quantity. Each question tests a specific concept in the book.
 
 Some questions are designed to raise errors. The answers listed for those questions would be the appropriate error (e.g., `NameError`, `ArgumentError`).
 
 I would like to thank:
-- [Launch School](https://launchschool.com) and [David Black](https://www.manning.com/books/the-well-grounded-rubyist-third-edition) for teaching me Ruby.
+- [Launch School](https://launchschool.com) and [_The Well Grounded Rubyist_](https://www.manning.com/books/the-well-grounded-rubyist-third-edition) for teaching me Ruby.
 - [lydiahallie](https://github.com/lydiahallie/javascript-questions) for formatting inspiration.
 - [ekalinin](https://github.com/ekalinin/github-markdown-toc) for automatic table of contents generation 
 
 # Table of Contents
+* [Ruby basics](#ruby-basics)
+* [Objects, methods, and local variables](#objects-methods-and-local-variables)
+* [Classes and `self`](#classes-and-self)
+* [Modules, `super`, and constant resolution](#modules-super-and-constant-resolution)
+* [Private and protected methods](#private-and-protected-methods)
+* [`if`, `else`, and `case`](#if-else-and-case)
 
-# Ruby Basics
+# Ruby basics
 
 1. Which of the following are ways to create a String object with value "Hello World"? Select all that apply.
 - A: `"Hello World"`
@@ -330,7 +338,7 @@ A, B, C
 </p>
 </details>
 
-# Objects, Methods, and Local Variables 
+# Objects, methods, and local variables 
 
 1. What does the following code output?
 ```
@@ -1590,7 +1598,7 @@ puts SubAbc.new.message
 </p>
 </details>
 
-# Private and Protected Methods
+# Private and protected methods
 1. Methods in a class are \_______ by default.
 - A. public
 - B. private
