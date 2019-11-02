@@ -4,11 +4,6 @@ I created 346 questions to review Ruby syntax and concepts covered in _The Well 
 
 Some questions are designed to raise errors. The answers listed for those questions would be the appropriate error (e.g., `NameError`, `ArgumentError`).
 
-I would like to thank:
-- [Launch School](https://launchschool.com) and [_The Well Grounded Rubyist_](https://www.manning.com/books/the-well-grounded-rubyist-third-edition) for teaching me Ruby.
-- [lydiahallie](https://github.com/lydiahallie/javascript-questions) for formatting inspiration.
-- [ekalinin](https://github.com/ekalinin/github-markdown-toc) for automatic table of contents generation 
-
 # Table of Contents
 * [Ruby Basics](#ruby-basics)
 * [Objects, Methods, and Local Variables](#objects-methods-and-local-variables)
