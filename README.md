@@ -1957,7 +1957,7 @@ True
 <details><summary><b>Answer</b></summary>
 <p>
 
-A, C, E
+A, B, C, E
 
 </p>
 </details>
@@ -1978,6 +1978,7 @@ A, C, E
 <details><summary><b>Answer</b></summary>
 <p>
 
+A, B, E
 
 </p>
 </details>
@@ -1998,7 +1999,7 @@ end
 <details><summary><b>Answer</b></summary>
 <p>
 
-``
+`"c"`
 
 </p>
 </details>
@@ -2019,7 +2020,7 @@ end
 <details><summary><b>Answer</b></summary>
 <p>
 
-``
+`"c"`
 
 </p>
 </details>
@@ -2040,7 +2041,7 @@ end
 <details><summary><b>Answer</b></summary>
 <p>
 
-``
+`"b"`
 
 </p>
 </details>
@@ -2059,7 +2060,7 @@ end
 <details><summary><b>Answer</b></summary>
 <p>
 
-``
+`nil`
 
 </p>
 </details>
@@ -2076,7 +2077,7 @@ p x
 <details><summary><b>Answer</b></summary>
 <p>
 
-``
+`nil`
 
 </p>
 </details>
@@ -2093,7 +2094,7 @@ p y
 <details><summary><b>Answer</b></summary>
 <p>
 
-``
+`NameError (undefined local variable or method 'y' for main:Object)`
 
 </p>
 </details>
@@ -2111,7 +2112,7 @@ end
 <details><summary><b>Answer</b></summary>
 <p>
 
-``
+`"Hello"`
 
 </p>
 </details>
@@ -2135,7 +2136,7 @@ end
 <details><summary><b>Answer</b></summary>
 <p>
 
-``
+`"Hello"`
 
 </p>
 </details>
@@ -2159,7 +2160,7 @@ end
 <details><summary><b>Answer</b></summary>
 <p>
 
-``
+`"OK I will wait"`
 
 </p>
 </details>
@@ -2170,7 +2171,7 @@ end
 <details><summary><b>Answer</b></summary>
 <p>
 
-``
+the threequal operator `===`, also known as the case equality method
 
 </p>
 </details>
@@ -2221,7 +2222,7 @@ end
 <details><summary><b>Answer</b></summary>
 <p>
 
-``
+C
 
 </p>
 </details>
@@ -2232,7 +2233,7 @@ end
 <details><summary><b>Answer</b></summary>
 <p>
 
-``
+False
 
 </p>
 </details>
@@ -2243,7 +2244,7 @@ end
 <details><summary><b>Answer</b></summary>
 <p>
 
-``
+True
 
 </p>
 </details>
@@ -2254,7 +2255,7 @@ end
 <details><summary><b>Answer</b></summary>
 <p>
 
-``
+False
 
 </p>
 </details>
@@ -2280,7 +2281,7 @@ puts case
 <details><summary><b>Answer</b></summary>
 <p>
 
-``
+`"c"`
 
 </p>
 </details>
