@@ -2280,3 +2280,371 @@ puts case
 
 </p>
 </details>
+
+# Loops, Iterators, and Code Blocks 
+
+1. Which of the following are valid statements to output "Looping forever", forever? Select all that apply.
+A. `loop puts "Looping forever"`
+B. `loop puts "Looping forever" end`
+C. `loop do puts "Looping forever" end`
+D. 
+```ruby
+loop do
+  puts "Looping forever"
+end
+```
+E. `loop do { puts "Looping forever" } end
+F. `loop { puts "Looping forever" } end`
+G. `loop { puts "Looping forever" }`
+<details><summary><b>Answer</b></summary>
+<p>
+
+D, G
+
+</p>
+</details>
+
+---
+
+2. What is the last number output in the following code?
+```ruby
+x = 1
+loop do
+  puts x
+  x += 1
+  break if x > 5
+end
+```
+<details><summary><b>Answer</b></summary>
+<p>
+
+`5`
+
+</p>
+</details>
+
+---
+
+3. What is the last number output in the following code?
+```ruby
+x = 1
+loop do
+  break if x > 5
+  puts x
+  x += 1
+end
+```
+<details><summary><b>Answer</b></summary>
+<p>
+
+`5`
+
+</p>
+</details>
+
+---
+
+4. What is the last number output in the following code?
+```ruby
+x = 1
+loop do
+  x += 1
+  puts x
+  break if x > 5
+end
+```
+<details><summary><b>Answer</b></summary>
+<p>
+
+`6`
+
+</p>
+</details>
+
+---
+
+5. What is the last number output in the following code?
+```ruby
+x = 1
+loop do
+  puts x
+  x += 1
+  next unless x == 10
+  break
+end
+```
+<details><summary><b>Answer</b></summary>
+<p>
+
+`9`
+
+</p>
+</details>
+
+---
+
+6. What is the last number output in the following code?
+```ruby
+x = 1
+loop do
+  x += 1
+  next unless x == 10
+  puts x
+  break
+end
+```
+<details><summary><b>Answer</b></summary>
+<p>
+
+`10`
+
+</p>
+</details>
+
+---
+
+7. Which of the following statements outputs the numbers 1 through 10, given `n = 1`? Select all that apply.
+A.
+```ruby
+while n < 10
+  puts n
+end
+```
+B.
+```ruby
+until n > 10
+  puts n
+  n += 1
+end
+```
+C.
+```ruby
+loop do
+  puts n
+  n += 1
+  break if n == 10
+end
+```
+D. 
+```ruby
+begin
+  puts n
+  n += 1
+end while n <= 10
+```
+<details><summary><b>Answer</b></summary>
+<p>
+
+B, D
+
+</p>
+</details>
+
+---
+
+8. True or False: You must explicitly use the keywords `do` and `end` when defining a do..end block for `while` and `until` and not using curly braces.
+<details><summary><b>Answer</b></summary>
+<p>
+
+False
+
+</p>
+</details>
+
+---
+
+9. True or False: You must explicitly use the keywords `do` and `end` when defining a do..end block for `loop` and not using curly braces.
+<details><summary><b>Answer</b></summary>
+<p>
+
+True
+
+</p>
+</details>
+
+---
+
+10. True or False: The method `my_loop` as defined below has the same behavior as `loop`, as demonstrated by the last two statements below.
+```ruby
+def my_loop
+  yield while true
+end
+
+my_loop { puts "Looping forever" }
+loop { puts "Looping forever" }
+```
+<details><summary><b>Answer</b></summary>
+<p>
+
+True
+
+</p>
+</details>
+
+---
+
+11. An iterator is a Ruby method that expects you to provide it with a ______ _______.
+<details><summary><b>Answer</b></summary>
+<p>
+
+code block
+
+</p>
+</details>
+
+---
+
+12. Control passes to the _______ when an iterator yields.
+<details><summary><b>Answer</b></summary>
+<p>
+
+code block
+
+</p>
+</details>
+
+---
+
+13. An iterator is called within a program ABC. The iterator runs and yields to a code block. The code within the code block runs and the code block is finished executing. What happens afterwards?
+A. Yielding to a code block is the same as returning from a method. Control passes to the program ABC.
+B. Control remains with the code block and the entire code block executes again and again, forever.
+C. Control passes to the method at the statement immediately following the call to yield.
+<details><summary><b>Answer</b></summary>
+<p>
+
+C
+
+</p>
+</details>
+
+---
+
+14. True or False: According to the Well-Grounded Rubyist, code blocks and method arguments are separate constructs. Code blocks are part of the method call syntax.
+<details><summary><b>Answer</b></summary>
+<p>
+
+True
+
+</p>
+</details>
+
+---
+
+15. True or False: You can always provide a method with a code block, even if the method does not do anything with it.
+<details><summary><b>Answer</b></summary>
+<p>
+
+True
+
+</p>
+</details>
+
+---
+
+16. True or False: If you provide any method with a code block, that method will yield.
+<details><summary><b>Answer</b></summary>
+<p>
+
+False
+
+</p>
+</details>
+
+---
+
+17. What does the following code output?
+```ruby
+def my_method(array)
+  ctr = 0
+  acc = []
+  until ctr == array.size
+    yield array[ctr]
+    ctr += 1
+  end
+end
+
+my_method([1, 2, 3, 4, 5]) { |x| puts x + 1 }
+```
+<details><summary><b>Answer</b></summary>
+<p>
+
+```ruby
+2
+3
+4
+5
+6
+```
+
+</p>
+</details>
+
+---
+
+18. What does the following code output?
+```ruby
+def my_method(array)
+  acc = []
+  array.each { |x| acc << yield x }
+  acc
+end
+
+p my_method([1, 2, 3, 4, 5]) { |x| x * 2 }
+```
+<details><summary><b>Answer</b></summary>
+<p>
+
+`[2, 4, 6, 8, 10]`
+
+</p>
+</details>
+
+---
+
+19. What does the following code output?
+```ruby
+def my_method(integer)
+  ctr = 0
+  while ctr < integer
+    yield ctr
+    ctr += 1
+  end
+end
+
+my_method(3) do |x|
+  puts x * 5
+end
+```
+<details><summary><b>Answer</b></summary>
+<p>
+
+```ruby
+0
+5
+10
+```
+
+</p>
+</details>
+
+---
+
+20. What does the following code output?
+```ruby
+def my_method(array)
+  acc = []
+  array.each { |x| acc << x if yield x }
+  acc
+end
+
+result = my_method([2, 5, 6, 9, 10]) { |x| x % 2 == 0 }
+p result
+```
+
+<details><summary><b>Answer</b></summary>
+<p>
+
+`[2, 6, 10]`
+
+</p>
+</details>
