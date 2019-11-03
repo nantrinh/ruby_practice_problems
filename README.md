@@ -7,7 +7,7 @@ Some questions are designed to raise errors. The answers listed for those questi
 # Table of Contents
 
 | Section | Topic | Questions|
-| :---: |:---| ---:|
+| :---: |:---| :---:|
 | 1 | [Ruby Basics](#ruby-basics) | 26 |
 | 2 | [Objects, Methods, and Local Variables](#objects-methods-and-local-variables) | 17 |
 | 3 | [Classes and self](#classes-and-self) | 17 |
