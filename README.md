@@ -10,12 +10,19 @@ Some questions are designed to raise errors. The answers listed for those questi
 | :---: |:---| :---:|
 | 1 | [Ruby Basics](#ruby-basics) | 26 |
 | 2 | [Objects, Methods, and Local Variables](#objects-methods-and-local-variables) | 17 |
-| 3 | [Classes and self](#classes-and-self) | 17 |
-| 4 | [Modules, super, and Constant Resolution](#modules-super-and-constant-resolution) | 17 |
+| 3 | [Classes and `self`](#classes-and-self) | 17 |
+| 4 | [Modules, `super`, and Constant Resolution](#modules-super-and-constant-resolution) | 17 |
 | 5 | [Private and Protected Methods](#private-and-protected-methods) | 18 |
-| 6 | [if, else, and case](#if-else-and-case) | 17 |
+| 6 | [`if`, `else`, and `case`](#if-else-and-case) | 17 |
 | 7 | [Loops, Iterators, and Code Blocks](#loops-iterators-and-code-blocks) | 20 |
 | 8 | [Exceptions](#exceptions) | 14 |
+| 9 | [Built-in Essentials](#built-in-essentials) | 26 |
+| 10 | [Strings and Symbols](#strings-and-symbols) | 26 |
+| 11 | [Arrays](#arrays) | 48 |
+| 12 | [Hashes](#hashes) | 22 |
+| 13 | [Ranges and Sets](#ranges-and-sets) | 27 |
+| 14 | [Regular Expressions](#regular-expressions) | 34 |
+| 15 | [Procs and Lambdas](#procs-and-lambdas) | 18 |
 
 # Ruby Basics
 
