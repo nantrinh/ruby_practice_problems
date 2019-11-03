@@ -3202,6 +3202,357 @@ str1 == str2
 </details>
 
 # Strings and Symbols
+1. Which of the following is true of the below code? Select all that apply.
+```ruby
+text = <<EOM
+Hello World.
+My cat's name is Victor.
+He likes fleece blankets.
+EOM
+```
+A. `text` is a string.
+B. `text` is a multiline string.
+C. `text` is a "here" document, or here-doc.
+D. If we inspected `text`, we would see "Hello World.\nMy cat's name is Victor.\nHe likes fleece blankets.\n"
+E. `EOM` can be replaced with any delimiter.
+<details><summary><b>Answer</b></summary>
+<p>
+
+A, B, C, D, E
+
+</p>
+</details>
+
+---
+
+2. What does the following code return?
+```ruby
+str = "pizza"
+str[2]
+```
+<details><summary><b>Answer</b></summary>
+<p>
+
+`"z"`
+
+</p>
+</details>
+
+---
+
+3. What does the following code return?
+```ruby
+str = "pizza"
+str[2, 3]
+```
+<details><summary><b>Answer</b></summary>
+<p>
+
+`"zza"`
+
+</p>
+</details>
+
+---
+
+4. What does the following code return?
+```ruby
+str = "The Wandering Earth"
+str[1..6]
+```
+<details><summary><b>Answer</b></summary>
+<p>
+
+`"he Wan"`
+
+</p>
+</details>
+
+---
+
+5. What does the following code output?
+```ruby
+str = "The Wandering Earth"
+str[1..2] = 'en'
+puts str
+```
+<details><summary><b>Answer</b></summary>
+<p>
+
+`"Ten Wandering Earth"`
+
+</p>
+</details>
+
+---
+
+6. What does the following code output?
+```ruby
+str = "I want peppers and mushrooms on my pizza."
+str.slice!("and mushrooms ")
+puts str
+```
+<details><summary><b>Answer</b></summary>
+<p>
+
+`"I want peppers on my pizza."`
+
+</p>
+</details>
+
+---
+
+7. What does the following code output?
+```ruby
+str = "I want peppers and mushrooms on my pizza."
+str["mushrooms"] = "pineapple"
+puts str
+```
+<details><summary><b>Answer</b></summary>
+<p>
+
+`"I want peppers and pineapple on my pizza."`
+
+</p>
+</details>
+
+---
+
+8. What does the following code return?
+```ruby
+str = "1234567890"
+str[-4..-1]
+```
+<details><summary><b>Answer</b></summary>
+<p>
+
+`"7890"`
+
+</p>
+</details>
+
+---
+
+9. Which of the following returns "Cheese Pizza" but does not modify the receiver? Select all that apply. Assume `str = "Cheese"`.
+A. `str + " Pizza"`
+B. `str << " Pizza"`
+C. `str.append( "Pizza")`
+D. `str.join( "Pizza")`
+<details><summary><b>Answer</b></summary>
+<p>
+
+A
+
+</p>
+</details>
+
+---
+
+10. Which of the following causes an error to be thrown? Select all that apply. Assume `str = "Cheese"`.
+A. `str + " Pizza"`
+B. `str << " Pizza"`
+C. `str.append( "Pizza")`
+D. `str.join( "Pizza")`
+<details><summary><b>Answer</b></summary>
+<p>
+
+C, D
+
+</p>
+</details>
+
+---
+
+11. How are two strings of the same length sorted? (e.g., `"basic" <=> "pizza"`)
+<details><summary><b>Answer</b></summary>
+<p>
+
+Character by character, according to each character's ordinal code. The default encoding is UTF-8.
+
+</p>
+</details>
+
+---
+
+12. How are two strings of different length sorted? (e.g., "basic" <=> "basics")
+<details><summary><b>Answer</b></summary>
+<p>
+
+Character by character, according to each character's ordinal code. The default encoding is UTF-8.
+
+If the strings are equal compared up to the length of the shorter one, then the longer string is considered greater than the shorter one.
+
+</p>
+</details>
+
+---
+
+13. What does the following code return? `"I want pizza".upcase`
+<details><summary><b>Answer</b></summary>
+<p>
+
+`"I WANT PIZZA"`
+
+</p>
+</details>
+
+---
+
+14. What does the following code return? `"Mr. Bird".downcase`
+<details><summary><b>Answer</b></summary>
+<p>
+
+`"mr. bird"`
+
+</p>
+</details>
+
+---
+
+15. What does the following code return? `"Mr. Bird".swapcase`
+<details><summary><b>Answer</b></summary>
+<p>
+
+`"mR. bIRD"`
+
+</p>
+</details>
+
+---
+
+16. What does the following code return? `"hello world".capitalize`
+<details><summary><b>Answer</b></summary>
+<p>
+
+`"Hello world"`
+
+</p>
+</details>
+
+---
+
+17. What does the following code return? `"hello".rjust(10)`
+<details><summary><b>Answer</b></summary>
+<p>
+
+`"     hello"` (5 spaces + `"hello"`)
+
+</p>
+</details>
+
+---
+
+18. What does the following code return? `"hello".ljust(10)`
+<details><summary><b>Answer</b></summary>
+<p>
+
+`"hello     "` ("hello" + 5 spaces)
+
+</p>
+</details>
+
+---
+
+19. What does the following code return? `"hello".center(9)`
+<details><summary><b>Answer</b></summary>
+<p>
+
+`"  hello  "` (2 spaces + "hello" + 2 spaces)
+
+</p>
+</details>
+
+---
+
+20. What does the following code return? `"hello".center(9, '<>')`
+<details><summary><b>Answer</b></summary>
+<p>
+
+`"<>hello<>"`
+
+</p>
+</details>
+
+---
+
+21. Which of the following returns "sunny day"? Select all that apply.
+A. `"sunny day\n".chop`
+B. `"sunny day\n".chomp`
+C. `"sunny day".chop`
+D. `"sunny day".chomp`
+E. `"sunny days are nice".chop("s are nice")`
+F. `"sunny days are nice".chomp("s are nice")`
+<details><summary><b>Answer</b></summary>
+<p>
+
+A, B, D, F
+
+</p>
+</details>
+
+---
+
+22. True or False: Symbols are immutable. You cannot alter a given symbol.
+<details><summary><b>Answer</b></summary>
+<p>
+
+True
+
+</p>
+</details>
+
+---
+
+23. True or False: When you see `:abc` in two places in the code, they refer to the same object.
+<details><summary><b>Answer</b></summary>
+<p>
+
+True
+
+</p>
+</details>
+
+---
+
+24. True or False: You can create a new symbol by using the literal constructor (e.g., `:abc`) or calling the `new` method (e.g., `Symbol.new(abc)`)
+<details><summary><b>Answer</b></summary>
+<p>
+
+False. You can only use the literal.
+
+_The Well-Grounded Rubyist_ page 238:
+> Because symbols are unique, there's no point having a constructor for them; Ruby has no `Symbol.new` method. You can't create a symbol any more than you can create a new integer. In both cases, you can only refer to them."
+
+</p>
+</details>
+
+---
+
+25. True or False: When you define a method, the method definition returns its name as a symbol. (e.g., `def abc; end` returns `:abc`)
+<details><summary><b>Answer</b></summary>
+<p>
+
+True
+
+</p>
+</details>
+
+---
+
+26. True or False: If you use an identifier for two purposes, for example, as a local variable and also as a method name, the symbol appears twice in the symbol table.
+
+<details><summary><b>Answer</b></summary>
+<p>
+
+False
+
+_The Well-Grounded Rubyist_ page 239-240:
+> The symbol table is just that: a symbol table.
+
+> Ruby keeps track of what symbols it's supposed to know about so it can look them up quickly. The inclusion of a symbol in the symbol table doesn't tell you anything about what the symbol is for. 
+
+</p>
+</details>
 
 # Arrays
 
