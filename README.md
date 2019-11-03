@@ -2416,20 +2416,20 @@ end
 ---
 
 7. Which of the following statements outputs the numbers 1 through 10, given `n = 1`? Select all that apply.
-A.
+- A.
 ```ruby
 while n < 10
   puts n
 end
 ```
-B.
+- B.
 ```ruby
 until n > 10
   puts n
   n += 1
 end
 ```
-C.
+- C.
 ```ruby
 loop do
   puts n
