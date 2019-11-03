@@ -2877,3 +2877,17 @@ True
 
 </p>
 </details>
+
+# Built-in Essentials
+
+# Strings and Symbols
+
+# Arrays
+
+# Hashes
+
+# Ranges and Sets
+
+# Regular Expressions
+
+# Procs and Lambdas
