@@ -252,7 +252,7 @@ A, B, C
 <details><summary><b>Answer</b></summary>
 <p>
 
-```
+```ruby
 1
 2
 3
@@ -348,7 +348,7 @@ A, B, C
 # Objects, Methods, and Local Variables 
 
 1. What does the following code output?
-```
+```ruby
 a = 5
 
 def my_method
@@ -369,7 +369,7 @@ my_method
 ---
 
 2. What does the following code output?
-```
+```ruby
 a = 5
 
 def my_method(a)
@@ -390,7 +390,7 @@ my_method(10)
 ---
 
 3. What does the following code output?
-```
+```ruby
 a = 5
 
 def my_method
@@ -412,7 +412,7 @@ my_method
 ---
 
 4. What does the following code output?
-```
+```ruby
 str = "Hello World" 
 
 def my_method(str)
@@ -434,7 +434,7 @@ puts str
 ---
 
 5. What does the following code output?
-```
+```ruby
 str = "Hello World" 
 
 def my_method(str)
@@ -456,7 +456,7 @@ puts str
 ---
 
 6. What does the following code output?
-```
+```ruby
 str = "Hello World" 
 
 def my_method(str)
@@ -478,7 +478,7 @@ puts str
 ---
 
 7. What does the following code output?
-```
+```ruby
 my_array = [1, 2, 3]
 
 def my_method(arr)
@@ -501,7 +501,7 @@ p my_array
 ---
 
 8. What does the following code output?
-```
+```ruby
 def my_method(arg1, arg2, arg3)
   [arg1, arg2, arg3]
 end
@@ -520,7 +520,7 @@ p my_method(1, 2)
 ---
 
 9. What does the following code output?
-```
+```ruby
 def my_method(arg1, arg2, arg3)
   [arg1, arg2, arg3]
 end
@@ -539,7 +539,7 @@ p my_method(1, 2, 3, 4)
 ---
 
 10. What does the following code output?
-```
+```ruby
 def my_method(*arg1)
   arg1
 end
@@ -558,7 +558,7 @@ p my_method(1, 2, 3, 4)
 ---
 
 11. What does the following code output?
-```
+```ruby
 def my_method(arg1=0, arg2=0)
   [arg1, arg2] 
 end
@@ -577,7 +577,7 @@ p my_method(1)
 ---
 
 12.  What does the following code output?
-```
+```ruby
 def my_method(arg1=0, *arg2, arg3)
   [arg1, arg2, arg3]
 end
@@ -596,7 +596,7 @@ p my_method(1, 2, 3, 4, 5, 6)
 ---
 
 13.  What does the following code output?
-```
+```ruby
 def my_method(arg1=0, *arg2, arg3=5)
   [arg1, arg2, arg3]
 end
@@ -615,7 +615,7 @@ p my_method(1, 2, 3, 4, 5, 6)
 ---
 
 14.  What does the following code output?
-```
+```ruby
 a = 5
 
 loop do
@@ -635,7 +635,7 @@ end
 ---
 
 15. Given the following code, which of the following statements are true? Select all that apply. 
-```
+```ruby
 a = 5
 # main level 
 1.times do
@@ -679,7 +679,7 @@ A, E, F, I, J, K, M, N, O, P
 ---
 
 16. What does the following code output?
-```
+```ruby
 input = "World"
 
 def say_hello(str)
@@ -706,7 +706,7 @@ puts input
 ---
 
 17. What does the following code output?
-```
+```ruby
 def my_method
   return "Hello Marian"
   "Hello Robin Hood"
@@ -726,7 +726,7 @@ p my_method
 # Classes and `self`
 
 1. What does the following code output?
-```
+```ruby
 class Person
   def initialize(name)
     @name = name
@@ -747,7 +747,7 @@ puts bob.name
 ---
 
 2. Which of the following modifications would cause the code to output `"Bob"`? Mark all that apply.
-```
+```ruby
 class Person
   def initialize(name)
     @name = name
@@ -796,7 +796,7 @@ class variable
 ---
 
 5. What does the following code output? 
-```
+```ruby
 class Person
   @@counter = 0
   attr_reader :name
@@ -819,7 +819,7 @@ puts lisa.counter
 <details><summary><b>Answer</b></summary>
 <p>
 
-```
+```ruby
 2
 NoMethodError (undefined method 'counter' for #<Person:0x00005594bb47adb0 @name="Lisa">)
 ```
@@ -830,7 +830,7 @@ NoMethodError (undefined method 'counter' for #<Person:0x00005594bb47adb0 @name=
 ---
 
 6. What does the following code output?
-```
+```ruby
 class Animal
   def speak
     "I am an animal"
@@ -856,7 +856,7 @@ Cow.new.speak
 ---
 
 7. What is the term for what is happening here?
-```
+```ruby
 class Animal
   def speak
     "I am an animal"
@@ -882,7 +882,7 @@ Method overriding
 ---
 
 8. Which of the following modifications would cause the code to output `100`? Mark all that apply.
-```
+```ruby
 class BankAccount 
   attr_reader :amount
 
@@ -912,7 +912,7 @@ C, D, F
 ---
 
 9. What does the following code output?
-```
+```ruby
 class LivingThing
 end
 
@@ -944,7 +944,7 @@ p Bengal.ancestors
 ---
 
 10. What does the following code output?
-```
+```ruby
 class LivingThing
 end
 
@@ -976,7 +976,7 @@ p Plant.ancestors
 ---
 
 11. What does the following code output?
-```
+```ruby
 class Cat
   def initialize(name)
     @name = name
@@ -1000,7 +1000,7 @@ C
 ---
 
 12. What does the following code output?
-```
+```ruby
 class Cat
   def initialize(name)
     @name = name
@@ -1028,7 +1028,7 @@ A
 ---
 
 13. What does the following code output?
-```
+```ruby
 class Cat
   def initialize(name)
     @name = name
@@ -1063,7 +1063,7 @@ D
 ---
 
 14. What does the following code output?
-```
+```ruby
 class Cat
   def initialize(name)
     @name = name
@@ -1083,7 +1083,7 @@ puts rosie.fly
 <details><summary><b>Answer</b></summary>
 <p>
 
-```
+```ruby
 "I can fly!"
 NoMethodError (undefined method `fly' for #<Cat:0x00005594bb468160 @name="Rosie">)
 ```
@@ -1094,7 +1094,7 @@ NoMethodError (undefined method `fly' for #<Cat:0x00005594bb468160 @name="Rosie"
 ---
 
 15. What does `self` refer to in the following code? 
-```
+```ruby
 class Person
   @@counter = 0
 
@@ -1118,7 +1118,7 @@ the `Person` class
 ---
 
 16. What does `self` refer to in the following code? 
-```
+```ruby
 class Person
   def initialize(name)
     @name = name
@@ -1140,7 +1140,7 @@ the calling object (an instance of the `Person` class)
 ---
 
 17. What does `self` refer to in the following code? 
-```
+```ruby
 class Person
   self
 
@@ -1160,7 +1160,7 @@ the `Person` class
 # Modules, `super`, and Constant Resolution
 
 1. Which of the following modifications would cause the code to output `"I am breathing"`? Select all that apply.
-```
+```ruby
 module Breathable 
   def breathe
     "I am breathing"
@@ -1195,7 +1195,7 @@ E, G
 ---
 
 2. What does the following code output?
-```
+```ruby
 module LandMovements
   def walk; end
 
@@ -1243,7 +1243,7 @@ p Duck.ancestors
 ---
 
 3. What does the following code output?
-```
+```ruby
 module M
   def my_method
     "Method inside module"
@@ -1270,7 +1270,7 @@ puts C.new.my_method
 ---
 
 4. What does `self` refer to in the following code?
-```
+```ruby
 module M
   def my_method
     self
@@ -1310,7 +1310,7 @@ True
 ---
 
 7. What does the following code output?
-```
+```ruby
 class Person 
   attr_reader :name
 
@@ -1339,7 +1339,7 @@ puts beatrice.name
 ---
 
 8. Which of the following lines of code, when used to replace `[CODE GOES HERE]` in the snippet below, would cause the program to output "Beatrice", when run? Select all that apply.
-```
+```ruby
 class Person 
   attr_reader :name
 
@@ -1374,7 +1374,7 @@ B
 ---
 
 9. Does an instance of the `Bengal` class have access to the `excrete` method defined in the module `BiologicalFunctions`? 
-```
+```ruby
 module BiologicalFunctions 
   def eat; end
 
@@ -1404,7 +1404,7 @@ Yes
 ---
 
 10. Which of the following are valid ways to access the `NUM_ITEMS` constant in class `Abc`?
-```
+```ruby
 class Abc
   NUM_ITEMS = 2
 end
@@ -1425,7 +1425,7 @@ D
 ---
 
 11. What does the following code output?
-```
+```ruby
 class Abc
   NUM_ITEMS = 2
 end
@@ -1447,7 +1447,7 @@ puts instance::NUM_ITEMS
 ---
 
 12. What does the following code output?
-```
+```ruby
 class Abc
   NUM_ITEMS = 2
 end
@@ -1469,7 +1469,7 @@ puts instance.class::NUM_ITEMS
 ---
 
 13. What does the following code output?
-```
+```ruby
 class Abc
   NUM_ITEMS = 2
 end
@@ -1492,7 +1492,7 @@ puts instance.class::NUM_ITEMS
 ---
 
 14. What does the following code output?
-```
+```ruby
 class Abc
   NUM_ITEMS = 2
 end
@@ -1517,7 +1517,7 @@ puts instance.message
 ---
 
 15. What does the following code output?
-```
+```ruby
 module MyModule
   def message
     "I have #{NUM_ITEMS} items."
@@ -1546,7 +1546,7 @@ puts instance.message
 ---
 
 16. What does the following code output?
-```
+```ruby
 module MyModule
   def message
     "I have #{self.class::NUM_ITEMS} items."
@@ -1575,7 +1575,7 @@ puts instance.message
 ---
 
 17. What does the following code output?
-```
+```ruby
 module MyModule
   def message
     "I have #{self.class::NUM_ITEMS} items."
@@ -1597,7 +1597,7 @@ puts SubAbc.new.message
 <details><summary><b>Answer</b></summary>
 <p>
 
-```
+```ruby
 "I have 2 items."
 "I have 4 items."
 ```
@@ -1649,7 +1649,7 @@ A
 ---
 
 4. Given the following code, which of the following statements would run without error if placed in the code snippet area? Select all that apply.
-```
+```ruby
 class Person
   attr_reader :age
   
@@ -1680,7 +1680,7 @@ A, D
 ---
 
 5. Given the following code, which of the following statements would run without error if placed in the code snippet area? Select all that apply.
-```
+```ruby
 class Person
   def initialize(age)
     @age = age
@@ -1713,7 +1713,7 @@ D
 ---
 
 6. Given the following code, which of the following statements, when placed in the code snippet area, would cause the puts statement to output 100? Select all that apply.
-```
+```ruby
 class Person
   attr_reader :age
 
@@ -1749,7 +1749,7 @@ B, C
 ---
 
 7. Given the following code, which of the following statements, when placed in the code snippet area, would cause the puts statement to output 100? Select all that apply.
-```
+```ruby
 class Person
   attr_reader :age
 
@@ -1785,7 +1785,7 @@ B, C
 ---
 
 8. Given the following code, which of the following statements, when placed in the code snippet area, would cause the puts statement to output 100? Select all that apply.
-```
+```ruby
 class Person
   attr_reader :age
 
@@ -1832,7 +1832,7 @@ True
 ---
 
 10. Which of the following are valid ways to call the private setter method `secret=`, from within `my_method` in the code below?
-```
+```ruby
 class Person
   def my_method
     [CODE SNIPPET HERE]
@@ -1949,7 +1949,7 @@ True
 
 1. Which of the following code snippets outputs "Hello", given `n = 2`? Select all that apply.
 - A.
-  ```
+  ```ruby
   if n > 1
     puts "Hello"
   else
@@ -1973,7 +1973,7 @@ A, B, C, E
 
 2. Which of the following code snippets outputs "Hello", given `n = 100`? Select all that apply.
 - A. 
-  ```
+  ```ruby
   unless n < 1
     puts "Hello"
   end
@@ -1993,7 +1993,7 @@ A, B, E
 ---
 
 3. What does this statement evaluate to?
-```
+```ruby
 x = 10
 if x == 2
   "a"
@@ -2014,7 +2014,7 @@ end
 ---
 
 4. What does this statement evaluate to?
-```
+```ruby
 x = 10
 if x == 2
   "a"
@@ -2035,7 +2035,7 @@ end
 ---
 
 5. What does this statement evaluate to?
-```
+```ruby
 x = 10
 if x == 2
   "a"
@@ -2056,7 +2056,7 @@ end
 ---
 
 6. What does this statement evaluate to?
-```
+```ruby
 x = 10
 if x == 2
   "a"
@@ -2075,7 +2075,7 @@ end
 ---
 
 7. What does this code output?
-```
+```ruby
 if false
   x = 1
 end
@@ -2092,7 +2092,7 @@ p x
 ---
 
 8. What does this code output?
-```
+```ruby
 if false
   x = 1
 end
@@ -2109,7 +2109,7 @@ p y
 ---
 
 9. What does this code output?
-```
+```ruby
 if (x = 2)
   puts "Hello"
 else
@@ -2127,7 +2127,7 @@ end
 ---
 
 10. What does this code output?
-```
+```ruby
 answer = 'yes'
 case answer
 when 'yes'
@@ -2151,7 +2151,7 @@ end
 ---
 
 11. What does this code output?
-```
+```ruby
 answer = 'maybe'
 case answer
 when 'yes'
@@ -2186,7 +2186,7 @@ the threequal operator `===`, also known as the case equality method
 ---
 
 13. Which of the following is equivalent to this code snippet? Select all that apply. Hint: Think of obj1 as a range, and obj2 and obj3 as integers.
-```
+```ruby
 case obj1
 when obj2
   1
@@ -2195,7 +2195,7 @@ when obj3
 end
 ```
 - A.
-  ```
+  ```ruby
   if obj1 == obj2
     1
   elsif obj1 == obj3
@@ -2203,7 +2203,7 @@ end
   end
   ```
 - B.
-  ```
+  ```ruby
   if obj2 == obj1
     1
   elsif obj3 == obj1
@@ -2211,7 +2211,7 @@ end
   end
   ```
 - C.
-  ```
+  ```ruby
   if obj2 === obj1
     1
   elsif obj3 === obj1
@@ -2219,7 +2219,7 @@ end
   end
   ```
 - D.
-  ```
+  ```ruby
   if obj1 === obj2
     1
   elsif obj1 === obj3
@@ -2270,7 +2270,7 @@ False
 ---
 
 17. What is the output from the following code?
-```
+```ruby
 x = 10
 puts case
      when x == 1
@@ -2296,18 +2296,18 @@ puts case
 # Loops, Iterators, and Code Blocks 
 
 1. Which of the following are valid statements to output "Looping forever", forever? Select all that apply.
-A. `loop puts "Looping forever"`
-B. `loop puts "Looping forever" end`
-C. `loop do puts "Looping forever" end`
-D. 
+- A. `loop puts "Looping forever"`
+- B. `loop puts "Looping forever" end`
+- C. `loop do puts "Looping forever" end`
+- D. 
 ```ruby
 loop do
   puts "Looping forever"
 end
-```
-E. `loop do { puts "Looping forever" } end
-F. `loop { puts "Looping forever" } end`
-G. `loop { puts "Looping forever" }`
+```ruby
+- E. `loop do { puts "Looping forever" } end
+- F. `loop { puts "Looping forever" } end`
+- G. `loop { puts "Looping forever" }`
 <details><summary><b>Answer</b></summary>
 <p>
 
@@ -2345,7 +2345,7 @@ loop do
   puts x
   x += 1
 end
-```
+```ruby
 <details><summary><b>Answer</b></summary>
 <p>
 
@@ -2384,7 +2384,7 @@ loop do
   next unless x == 10
   break
 end
-```
+```ruby
 <details><summary><b>Answer</b></summary>
 <p>
 
@@ -2421,7 +2421,7 @@ A.
 while n < 10
   puts n
 end
-```
+```ruby
 B.
 ```ruby
 until n > 10
@@ -2436,8 +2436,8 @@ loop do
   n += 1
   break if n == 10
 end
-```
-D. 
+```ruby
+- D. 
 ```ruby
 begin
   puts n
@@ -2518,9 +2518,9 @@ code block
 ---
 
 13. An iterator is called within a program ABC. The iterator runs and yields to a code block. The code within the code block runs and the code block is finished executing. What happens afterwards?
-A. Yielding to a code block is the same as returning from a method. Control passes to the program ABC.
-B. Control remains with the code block and the entire code block executes again and again, forever.
-C. Control passes to the method at the statement immediately following the call to yield.
+- A. Yielding to a code block is the same as returning from a method. Control passes to the program ABC.
+- B. Control remains with the code block and the entire code block executes again and again, forever.
+- C. Control passes to the method at the statement immediately following the call to yield.
 <details><summary><b>Answer</b></summary>
 <p>
 
@@ -2686,10 +2686,10 @@ True
 ---
 
 3. Which of the following is the default exception raised by the `raise` method?
-A. IOError
-B. TypeError
-C. StandardError
-D. RuntimeError
+- A. IOError
+- B. TypeError
+- C. StandardError
+- D. RuntimeError
 <details><summary><b>Answer</b></summary>
 <p>
 
@@ -2712,10 +2712,10 @@ True
 ---
 
 5. Which of the following exceptions are raised when you pass 5 arguments to a method that accepts 2?
-A. StandardError
-B. RuntimeError
-C. ArgumentError
-D. TypeError
+- A. StandardError
+- B. RuntimeError
+- C. ArgumentError
+- D. TypeError
 <details><summary><b>Answer</b></summary>
 <p>
 
@@ -2727,10 +2727,10 @@ C
 ---
 
 6. Which of the following exceptions are raised by the default `method_missing`?
-A. StandardError
-B. NoMethodError
-C. ArgumentError
-D. TypeError
+- A. StandardError
+- B. NoMethodError
+- C. ArgumentError
+- D. TypeError
 <details><summary><b>Answer</b></summary>
 <p>
 
@@ -2751,10 +2751,10 @@ rescue
 end
 puts "Your result is #{result}."
 ```
-A. ZeroDivisionError only.
-B. NameError only.
-C. Any exception that is a descendant class of `StandardError`.
-D. RuntimeError only.
+- A. ZeroDivisionError only.
+- B. NameError only.
+- C. Any exception that is a descendant class of `StandardError`.
+- D. RuntimeError only.
 <details><summary><b>Answer</b></summary>
 <p>
 
@@ -2777,10 +2777,10 @@ True
 ---
 
 9. What happens if you have the following code, `raise "Problem!"`
-A. A StandardError is raised, and the message "Problem!" is returned.
-B. A RuntimeError is raised, and the message "Problem!" is returned.
-C. A GenericError is raised, and the message "Problem!" is returned.
-D. This is improper syntax. You must specify the exception to raise.
+- A. A StandardError is raised, and the message "Problem!" is returned.
+- B. A RuntimeError is raised, and the message "Problem!" is returned.
+- C. A GenericError is raised, and the message "Problem!" is returned.
+- D. This is improper syntax. You must specify the exception to raise.
 <details><summary><b>Answer</b></summary>
 <p>
 
@@ -2819,10 +2819,10 @@ ensure
   # some code
 end
 ```
-A. When an exception is raised and caught by the rescue statement
-B. When an exception is raised and NOT caught by the rescue statement
-C. When an exception is NOT raised
-D. `ensure` clauses do not exist in Ruby.
+- A. When an exception is raised and caught by the rescue statement
+- B. When an exception is raised and NOT caught by the rescue statement
+- C. When an exception is NOT raised
+- D. `ensure` clauses do not exist in Ruby.
 <details><summary><b>Answer</b></summary>
 <p>
 
@@ -2855,8 +2855,8 @@ end
 ---
 
 13. How can you create a new exception class? Select all that apply.
-A. Inherit from `Exception`.
-B. Inherit from any descendant class of `Exception`.
+- A. Inherit from `Exception`.
+- B. Inherit from any descendant class of `Exception`.
 
 <details><summary><b>Answer</b></summary>
 <p>
@@ -2941,11 +2941,11 @@ True
 ---
 
 6. Which of the following statements are true of the range (0..9)? Select all that apply.
-A. Includes 0
-B. Includes 1
-C. Includes 8
-D. Includes 9 
-E. Includes 10
+- A. Includes 0
+- B. Includes 1
+- C. Includes 8
+- D. Includes 9 
+- E. Includes 10
 <details><summary><b>Answer</b></summary>
 <p>
 
@@ -2957,11 +2957,11 @@ A, B, C, D
 ---
 
 7. Which of the following statements are true of the range (0...9)? Select all that apply.
-A. Includes 0
-B. Includes 1
-C. Includes 8
-D. Includes 9 
-E. Includes 10
+- A. Includes 0
+- B. Includes 1
+- C. Includes 8
+- D. Includes 9 
+- E. Includes 10
 <details><summary><b>Answer</b></summary>
 <p>
 
@@ -2984,13 +2984,13 @@ syntactic sugar
 ---
 
 9. Which of the following are methods instead of operators?
-A. `+`
-B. `>`
-C. `==`
-D. `&&`
-E. `===`
-F. `[]`
-G. `%`
+- A. `+`
+- B. `>`
+- C. `==`
+- D. `&&`
+- E. `===`
+- F. `[]`
+- G. `%`
 <details><summary><b>Answer</b></summary>
 <p>
 
@@ -3210,11 +3210,11 @@ My cat's name is Victor.
 He likes fleece blankets.
 EOM
 ```
-A. `text` is a string.
-B. `text` is a multiline string.
-C. `text` is a "here" document, or here-doc.
-D. If we inspected `text`, we would see "Hello World.\nMy cat's name is Victor.\nHe likes fleece blankets.\n"
-E. `EOM` can be replaced with any delimiter.
+- A. `text` is a string.
+- B. `text` is a multiline string.
+- C. `text` is a "here" document, or here-doc.
+- D. If we inspected `text`, we would see "Hello World.\nMy cat's name is Victor.\nHe likes fleece blankets.\n"
+- E. `EOM` can be replaced with any delimiter.
 <details><summary><b>Answer</b></summary>
 <p>
 
@@ -3334,10 +3334,10 @@ str[-4..-1]
 ---
 
 9. Which of the following returns "Cheese Pizza" but does not modify the receiver? Select all that apply. Assume `str = "Cheese"`.
-A. `str + " Pizza"`
-B. `str << " Pizza"`
-C. `str.append( "Pizza")`
-D. `str.join( "Pizza")`
+- A. `str + " Pizza"`
+- B. `str << " Pizza"`
+- C. `str.append( "Pizza")`
+- D. `str.join( "Pizza")`
 <details><summary><b>Answer</b></summary>
 <p>
 
@@ -3349,10 +3349,10 @@ A
 ---
 
 10. Which of the following causes an error to be thrown? Select all that apply. Assume `str = "Cheese"`.
-A. `str + " Pizza"`
-B. `str << " Pizza"`
-C. `str.append( "Pizza")`
-D. `str.join( "Pizza")`
+- A. `str + " Pizza"`
+- B. `str << " Pizza"`
+- C. `str.append( "Pizza")`
+- D. `str.join( "Pizza")`
 <details><summary><b>Answer</b></summary>
 <p>
 
@@ -3476,12 +3476,12 @@ If the strings are equal compared up to the length of the shorter one, then the 
 ---
 
 21. Which of the following returns "sunny day"? Select all that apply.
-A. `"sunny day\n".chop`
-B. `"sunny day\n".chomp`
-C. `"sunny day".chop`
-D. `"sunny day".chomp`
-E. `"sunny days are nice".chop("s are nice")`
-F. `"sunny days are nice".chomp("s are nice")`
+- A. `"sunny day\n".chop`
+- B. `"sunny day\n".chomp`
+- C. `"sunny day".chop`
+- D. `"sunny day".chomp`
+- E. `"sunny days are nice".chop("s are nice")`
+- F. `"sunny days are nice".chomp("s are nice")`
 <details><summary><b>Answer</b></summary>
 <p>
 
