@@ -2300,11 +2300,11 @@ puts case
 - B. `loop puts "Looping forever" end`
 - C. `loop do puts "Looping forever" end`
 - D. 
-```ruby
-loop do
-  puts "Looping forever"
-end
-```
+  ```ruby
+  loop do
+    puts "Looping forever"
+  end
+  ```
 - E. `loop do { puts "Looping forever" } end`
 - F. `loop { puts "Looping forever" } end`
 - G. `loop { puts "Looping forever" }`
@@ -2417,33 +2417,33 @@ end
 
 7. Which of the following statements outputs the numbers 1 through 10, given `n = 1`? Select all that apply.
 - A.
-```ruby
-while n < 10
-  puts n
-end
-```
+  ```ruby
+  while n < 10
+    puts n
+  end
+  ```
 - B.
-```ruby
-until n > 10
-  puts n
-  n += 1
-end
-```
+  ```ruby
+  until n > 10
+    puts n
+    n += 1
+  end
+  ```
 - C.
-```ruby
-loop do
-  puts n
-  n += 1
-  break if n == 10
-end
-```
+  ```ruby
+  loop do
+    puts n
+    n += 1
+    break if n == 10
+  end
+  ```
 - D. 
-```ruby
-begin
-  puts n
-  n += 1
-end while n <= 10
-```
+  ```ruby
+  begin
+    puts n
+    n += 1
+  end while n <= 10
+  ```
 <details><summary><b>Answer</b></summary>
 <p>
 
@@ -2819,8 +2819,8 @@ ensure
   # some code
 end
 ```
-- A. When an exception is raised and caught by the rescue statement
-- B. When an exception is raised and NOT caught by the rescue statement
+- A. When an exception is raised and caught by the `rescue` statement
+- B. When an exception is raised and NOT caught by the `rescue` statement
 - C. When an exception is NOT raised
 - D. `ensure` clauses do not exist in Ruby.
 <details><summary><b>Answer</b></summary>
@@ -2879,7 +2879,7 @@ True
 </details>
 
 # Built-in Essentials
-1. Use two different literal constructors to instantiate a String object with value "hello".
+1. Use two different literal constructors to instantiate a `String` object with value "hello".
 <details><summary><b>Answer</b></summary>
 <p>
 
@@ -2893,7 +2893,7 @@ True
 
 ---
 
-2. Use a literal constructor to instantiate a Symbol with name `hello`.
+2. Use a literal constructor to instantiate a `Symbol` with name `hello`.
 <details><summary><b>Answer</b></summary>
 <p>
 
@@ -2904,7 +2904,7 @@ True
 
 ---
 
-3. Use a literal constructor to instantiate an Array with values 1, 2, and 3.
+3. Use a literal constructor to instantiate an `Array` with values 1, 2, and 3.
 <details><summary><b>Answer</b></summary>
 <p>
 
@@ -2915,7 +2915,7 @@ True
 
 ---
 
-4. Use a literal constructor to instantiate a Hash with key:value pairs ("New York", "NY") and ("Los Angeles", "CA").
+4. Use a literal constructor to instantiate a `Hash` with key:value pairs ("New York", "NY") and ("Los Angeles", "CA").
 <details><summary><b>Answer</b></summary>
 <p>
 
@@ -2926,7 +2926,7 @@ True
 
 ---
 
-5. Use a literal constructor to instantiate a Hash with key:value pairs (:abc, 1), (:def, 2). Do this in two ways.
+5. Use a literal constructor to instantiate a `Hash` with key:value pairs (:abc, 1), (:def, 2). Do this in two ways.
 <details><summary><b>Answer</b></summary>
 <p>
 
@@ -2940,7 +2940,7 @@ True
 
 ---
 
-6. Which of the following statements are true of the range (0..9)? Select all that apply.
+6. Which of the following statements are true of the range `(0..9)`? Select all that apply.
 - A. Includes 0
 - B. Includes 1
 - C. Includes 8
@@ -2956,7 +2956,7 @@ A, B, C, D
 
 ---
 
-7. Which of the following statements are true of the range (0...9)? Select all that apply.
+7. Which of the following statements are true of the range `(0...9)`? Select all that apply.
 - A. Includes 0
 - B. Includes 1
 - C. Includes 8
