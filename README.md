@@ -2879,6 +2879,327 @@ True
 </details>
 
 # Built-in Essentials
+1. Use two different literal constructors to instantiate a String object with value "hello".
+<details><summary><b>Answer</b></summary>
+<p>
+
+```ruby
+"hello"
+'hello'
+```
+
+</p>
+</details>
+
+---
+
+2. Use a literal constructor to instantiate a Symbol with name `hello`.
+<details><summary><b>Answer</b></summary>
+<p>
+
+`:hello`
+
+</p>
+</details>
+
+---
+
+3. Use a literal constructor to instantiate an Array with values 1, 2, and 3.
+<details><summary><b>Answer</b></summary>
+<p>
+
+`[1, 2, 3]`
+
+</p>
+</details>
+
+---
+
+4. Use a literal constructor to instantiate a Hash with key:value pairs ("New York", "NY") and ("Los Angeles", "CA").
+<details><summary><b>Answer</b></summary>
+<p>
+
+`{"New York" => "NY", "Los Angeles" => "CA"}`
+
+</p>
+</details>
+
+---
+
+5. Use a literal constructor to instantiate a Hash with key:value pairs (:abc, 1), (:def, 2). Do this in two ways.
+<details><summary><b>Answer</b></summary>
+<p>
+
+```ruby
+{:abc => 1, :def => 2}
+{abc: 1, abc: 2}
+```
+
+</p>
+</details>
+
+---
+
+6. Which of the following statements are true of the range (0..9)? Select all that apply.
+A. Includes 0
+B. Includes 1
+C. Includes 8
+D. Includes 9 
+E. Includes 10
+<details><summary><b>Answer</b></summary>
+<p>
+
+A, B, C, D
+
+</p>
+</details>
+
+---
+
+7. Which of the following statements are true of the range (0...9)? Select all that apply.
+A. Includes 0
+B. Includes 1
+C. Includes 8
+D. Includes 9 
+E. Includes 10
+<details><summary><b>Answer</b></summary>
+<p>
+
+A, B, C
+
+</p>
+</details>
+
+---
+
+8. What is the term for things Ruby lets you do to make your code look nicer? (e.g., arr[0] = 3 instead of arr.[]=(0, 3)
+<details><summary><b>Answer</b></summary>
+<p>
+
+syntactic sugar
+
+</p>
+</details>
+
+---
+
+9. Which of the following are methods instead of operators?
+A. `+`
+B. `>`
+C. `==`
+D. `&&`
+E. `===`
+F. `[]`
+G. `%`
+<details><summary><b>Answer</b></summary>
+<p>
+
+A, B, C, E, F, G
+
+</p>
+</details>
+
+---
+
+10. True or False: All methods that end in ! modify their receiver.
+<details><summary><b>Answer</b></summary>
+<p>
+
+False
+
+</p>
+</details>
+
+---
+
+11. True or False: It is considered best practice to only have a bang(!) method when you also have a non-bang equivalent. 
+<details><summary><b>Answer</b></summary>
+<p>
+
+True
+
+</p>
+</details>
+
+---
+
+12. True or False: `true` and `false` are objects.
+<details><summary><b>Answer</b></summary>
+<p>
+
+True
+
+</p>
+</details>
+
+---
+
+13. True or False: `true` is the only instance of `TrueClass`, and `false` is the only instance of `FalseClass` 
+<details><summary><b>Answer</b></summary>
+<p>
+
+True
+
+</p>
+</details>
+
+---
+
+14. What is the Boolean value of `nil`?
+<details><summary><b>Answer</b></summary>
+<p>
+
+`false`
+
+</p>
+</details>
+
+---
+
+15. What is the Boolean value of `puts "text"`?
+<details><summary><b>Answer</b></summary>
+<p>
+
+`false`
+
+</p>
+</details>
+
+---
+
+16. What is the Boolean value of `def x; end`?
+<details><summary><b>Answer</b></summary>
+<p>
+
+`true`
+
+</p>
+</details>
+
+---
+
+17. What is the Boolean value of `class C; end`?
+<details><summary><b>Answer</b></summary>
+<p>
+
+`false`
+
+</p>
+</details>
+
+---
+
+18. What is the Boolean value of `class C; 1; end`?
+<details><summary><b>Answer</b></summary>
+<p>
+
+`true`
+
+</p>
+</details>
+
+---
+
+19. What is the Boolean value of `x = 10`?
+<details><summary><b>Answer</b></summary>
+<p>
+
+`true`
+
+</p>
+</details>
+
+---
+
+20. What does the `==` method do, when used to compare two instances of class `Object`?
+<details><summary><b>Answer</b></summary>
+<p>
+
+Returns `true` if their `object_id`s are identical; `false` otherwise.
+
+[Ruby Docs](https://ruby-doc.org/core-2.6.5/Object.html#method-i-eql-3F):
+`==` is typically overridden in descendant classes to provide class-specific meaning.
+
+</p>
+</details>
+
+---
+
+21. What does the `eql?` method do, when used to compare two instances of class `Object`?
+<details><summary><b>Answer</b></summary>
+<p>
+
+Returns `true` if their `object_id`s are identical; `false` otherwise.
+
+[Ruby Docs](https://ruby-doc.org/core-2.6.5/Object.html#method-i-eql-3F):
+The `eql?` method returns `true` if the two objects refer to the same hash key. This is used by `Hash` to test members for equality. For objects of class `Object`, `eql?` is synonymous with `==`. Subclasses normally continue this tradition by aliasing `eql?` to their overridden `==` method, but there are exceptions.
+
+</p>
+</details>
+
+---
+
+22. What does the `equal?` method do, when used to compare two instances of class `Object`?
+<details><summary><b>Answer</b></summary>
+<p>
+
+Returns `true` if their `object_id`s are identical; `false` otherwise.
+
+[Ruby Docs](https://ruby-doc.org/core-2.6.5/Object.html#method-i-eql-3F):
+Unlike `==`, the `equal?` method should never be overridden by subclasses as it is used to determine object identity (that is, `a.equal?(b)` if and only if `a` is the same object as `b`.
+
+</p>
+</details>
+
+---
+
+23. What does the following code return?
+```ruby
+str1 = "text"
+str2 = "text"
+str1 == str2
+```
+<details><summary><b>Answer</b></summary>
+<p>
+
+`true`
+
+</p>
+</details>
+
+---
+
+24. True or False: If you define `==` in your class, objects of that class will automatically have the `!=` method defined to be the inverse of `==`.
+<details><summary><b>Answer</b></summary>
+<p>
+
+`true`
+
+</p>
+</details>
+
+---
+
+25. What class provides full comparison functionality in Ruby?
+<details><summary><b>Answer</b></summary>
+<p>
+
+`Comparable`
+
+</p>
+</details>
+
+---
+
+26. What is the method you need to define to get access to the full set of comparison methods in Ruby? Assume you have already mixed in the appropriate module.
+
+<details><summary><b>Answer</b></summary>
+<p>
+
+`<==>` (the spaceship method)
+
+</p>
+</details>
 
 # Strings and Symbols
 
