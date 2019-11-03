@@ -2304,8 +2304,8 @@ puts case
 loop do
   puts "Looping forever"
 end
-```ruby
-- E. `loop do { puts "Looping forever" } end
+```
+- E. `loop do { puts "Looping forever" } end`
 - F. `loop { puts "Looping forever" } end`
 - G. `loop { puts "Looping forever" }`
 <details><summary><b>Answer</b></summary>
@@ -2345,7 +2345,7 @@ loop do
   puts x
   x += 1
 end
-```ruby
+```
 <details><summary><b>Answer</b></summary>
 <p>
 
@@ -2384,7 +2384,7 @@ loop do
   next unless x == 10
   break
 end
-```ruby
+```
 <details><summary><b>Answer</b></summary>
 <p>
 
@@ -2421,7 +2421,7 @@ A.
 while n < 10
   puts n
 end
-```ruby
+```
 B.
 ```ruby
 until n > 10
@@ -2436,7 +2436,7 @@ loop do
   n += 1
   break if n == 10
 end
-```ruby
+```
 - D. 
 ```ruby
 begin
@@ -2686,10 +2686,10 @@ True
 ---
 
 3. Which of the following is the default exception raised by the `raise` method?
-- A. IOError
-- B. TypeError
-- C. StandardError
-- D. RuntimeError
+- A. `IOError`
+- B. `TypeError`
+- C. `StandardError`
+- D. `RuntimeError`
 <details><summary><b>Answer</b></summary>
 <p>
 
@@ -2712,10 +2712,10 @@ True
 ---
 
 5. Which of the following exceptions are raised when you pass 5 arguments to a method that accepts 2?
-- A. StandardError
-- B. RuntimeError
-- C. ArgumentError
-- D. TypeError
+- A. `StandardError`
+- B. `RuntimeError`
+- C. `ArgumentError`
+- D. `TypeError`
 <details><summary><b>Answer</b></summary>
 <p>
 
@@ -2727,10 +2727,10 @@ C
 ---
 
 6. Which of the following exceptions are raised by the default `method_missing`?
-- A. StandardError
-- B. NoMethodError
-- C. ArgumentError
-- D. TypeError
+- A. `StandardError`
+- B. `NoMethodError`
+- C. `ArgumentError`
+- D. `TypeError`
 <details><summary><b>Answer</b></summary>
 <p>
 
@@ -2751,10 +2751,10 @@ rescue
 end
 puts "Your result is #{result}."
 ```
-- A. ZeroDivisionError only.
-- B. NameError only.
+- A. `ZeroDivisionError` only.
+- B. `NameError` only.
 - C. Any exception that is a descendant class of `StandardError`.
-- D. RuntimeError only.
+- D. `RuntimeError` only.
 <details><summary><b>Answer</b></summary>
 <p>
 
@@ -2777,9 +2777,9 @@ True
 ---
 
 9. What happens if you have the following code, `raise "Problem!"`
-- A. A StandardError is raised, and the message "Problem!" is returned.
-- B. A RuntimeError is raised, and the message "Problem!" is returned.
-- C. A GenericError is raised, and the message "Problem!" is returned.
+- A. A `StandardError` is raised, and the message `"Problem!"` is returned.
+- B. A `RuntimeError` is raised, and the message `"Problem!"` is returned.
+- C. A `GenericError` is raised, and the message `"Problem!"` is returned.
 - D. This is improper syntax. You must specify the exception to raise.
 <details><summary><b>Answer</b></summary>
 <p>
@@ -2833,7 +2833,7 @@ A, B, C
 
 ---
 
-12. Suppose you created an exception MyCustomError as follows. How would you write code to raise the exception when the array `my_array` does not include the number `2`? 
+12. Suppose you created an exception `MyCustomError` as follows. How would you write code to raise the exception when the array `my_array` does not include the number `2`? 
 ```ruby
 module MyModule
   class MyCustomError < StandardError; end
@@ -2868,7 +2868,7 @@ A, B
 
 ---
 
-14. True or False: RuntimeError is a descendant of StandardError.
+14. True or False: `RuntimeError` is a descendant of `StandardError`.
 
 <details><summary><b>Answer</b></summary>
 <p>
@@ -2972,7 +2972,7 @@ A, B, C
 
 ---
 
-8. What is the term for things Ruby lets you do to make your code look nicer? (e.g., arr[0] = 3 instead of arr.[]=(0, 3)
+8. What is the term for things Ruby lets you do to make your code look nicer? (e.g., `arr[0] = 3` instead of `arr.[]=(0, 3)`)
 <details><summary><b>Answer</b></summary>
 <p>
 
@@ -3001,7 +3001,7 @@ A, B, C, E, F, G
 
 ---
 
-10. True or False: All methods that end in ! modify their receiver.
+10. True or False: All methods that end in `!` modify their receiver.
 <details><summary><b>Answer</b></summary>
 <p>
 
@@ -3012,7 +3012,7 @@ False
 
 ---
 
-11. True or False: It is considered best practice to only have a bang(!) method when you also have a non-bang equivalent. 
+11. True or False: It is considered best practice to only have a bang(`!`) method when you also have a non-bang equivalent. 
 <details><summary><b>Answer</b></summary>
 <p>
 
@@ -3374,7 +3374,7 @@ Character by character, according to each character's ordinal code. The default 
 
 ---
 
-12. How are two strings of different length sorted? (e.g., "basic" <=> "basics")
+12. How are two strings of different length sorted? (e.g., `"basic" <=> "basics"`)
 <details><summary><b>Answer</b></summary>
 <p>
 
