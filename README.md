@@ -1,16 +1,21 @@
 # Ruby Practice Problems
 
-I created 346 questions to review Ruby syntax and concepts covered in _The Well Grounded Rubyist_ by David Black. Each question tests a specific concept in the book.
+I created 347 questions to review Ruby syntax and concepts covered in _The Well Grounded Rubyist_ by David Black. Each question tests a specific concept in the book.
 
 Some questions are designed to raise errors. The answers listed for those questions would be the appropriate error (e.g., `NameError`, `ArgumentError`).
 
 # Table of Contents
-* [Ruby Basics](#ruby-basics)
-* [Objects, Methods, and Local Variables](#objects-methods-and-local-variables)
-* [Classes and self](#classes-and-self)
-* [Modules, super, and Constant Resolution](#modules-super-and-constant-resolution)
-* [Private and Protected Methods](#private-and-protected-methods)
-* [if, else, and case](#if-else-and-case)
+
+| Section | Topic | Questions|
+| ------------- |:-------------:| -----:|
+| 1 | [Ruby Basics](#ruby-basics) | 26 |
+| 2 | [Objects, Methods, and Local Variables](#objects-methods-and-local-variables) | 17 |
+| 3 | [Classes and self](#classes-and-self) | 17 |
+| 4 | [Modules, super, and Constant Resolution](#modules-super-and-constant-resolution) | 17 |
+| 5 | [Private and Protected Methods](#private-and-protected-methods) | 18 |
+| 6 | [if, else, and case](#if-else-and-case) | 17 |
+| 7 | [Loops, Iterators, and Code Blocks](#loops-iterators-and-code-blocks) | 20 |
+| 8 | [Exceptions](#exceptions) | 14 |
 
 # Ruby Basics
 
@@ -2645,6 +2650,223 @@ p result
 <p>
 
 `[2, 6, 10]`
+
+</p>
+</details>
+
+# Exceptions
+
+1. Is an exception a method or an object?
+<details><summary><b>Answer</b></summary>
+<p>
+
+Object. An exception is an instance of the class `Exception` or a descendant of that class.
+
+</p>
+</details>
+
+---
+
+2. True or False: When an exception is raised, the program is ALWAYS aborted unless you have provided a `rescue` clause. 
+<details><summary><b>Answer</b></summary>
+<p>
+
+True
+
+</p>
+</details>
+
+---
+
+3. Which of the following is the default exception raised by the `raise` method?
+A. IOError
+B. TypeError
+C. StandardError
+D. RuntimeError
+<details><summary><b>Answer</b></summary>
+<p>
+
+D
+
+</p>
+</details>
+
+---
+
+4. True or False: `NameError`, `NoMethodError`, and `TypeError` are all classes descended from `Exception`.
+<details><summary><b>Answer</b></summary>
+<p>
+
+True
+
+</p>
+</details>
+
+---
+
+5. Which of the following exceptions are raised when you pass 5 arguments to a method that accepts 2?
+A. StandardError
+B. RuntimeError
+C. ArgumentError
+D. TypeError
+<details><summary><b>Answer</b></summary>
+<p>
+
+C
+
+</p>
+</details>
+
+---
+
+6. Which of the following exceptions are raised by the default `method_missing`?
+A. StandardError
+B. NoMethodError
+C. ArgumentError
+D. TypeError
+<details><summary><b>Answer</b></summary>
+<p>
+
+B
+
+</p>
+</details>
+
+---
+
+7. What exceptions does the following code rescue?
+```ruby
+n = gets.to_i
+begin
+  result = 100 / n 
+rescue
+  puts "You cannot divide by zero."
+end
+puts "Your result is #{result}."
+```
+A. ZeroDivisionError only.
+B. NameError only.
+C. Any exception that is a descendant class of `StandardError`.
+D. RuntimeError only.
+<details><summary><b>Answer</b></summary>
+<p>
+
+C
+
+</p>
+</details>
+
+---
+
+8. True or False: If you use the `rescue` keyword inside a method or code block, you do not have to use `begin` explicitly, if you want the `rescue` clause to apply to the entire method or block.
+<details><summary><b>Answer</b></summary>
+<p>
+
+True
+
+</p>
+</details>
+
+---
+
+9. What happens if you have the following code, `raise "Problem!"`
+A. A StandardError is raised, and the message "Problem!" is returned.
+B. A RuntimeError is raised, and the message "Problem!" is returned.
+C. A GenericError is raised, and the message "Problem!" is returned.
+D. This is improper syntax. You must specify the exception to raise.
+<details><summary><b>Answer</b></summary>
+<p>
+
+B
+
+</p>
+</details>
+
+---
+
+10. How would you write a `rescue` statement to rescue an `ArgumentError` and assign the exception object to the variable `e`? 
+```ruby
+begin
+  # some code
+[YOUR CODE HERE]
+  # some code
+end
+```
+<details><summary><b>Answer</b></summary>
+<p>
+
+`rescue ArgumentError => e`
+
+</p>
+</details>
+
+---
+
+11. When is an `ensure` clause executed? Select all that apply.
+```ruby
+begin
+  # some code
+rescue ArgumentError
+  # some code
+ensure
+  # some code
+end
+```
+A. When an exception is raised and caught by the rescue statement
+B. When an exception is raised and NOT caught by the rescue statement
+C. When an exception is NOT raised
+D. `ensure` clauses do not exist in Ruby.
+<details><summary><b>Answer</b></summary>
+<p>
+
+A, B, C
+
+</p>
+</details>
+
+---
+
+12. Suppose you created an exception MyCustomError as follows. How would you write code to raise the exception when the array `my_array` does not include the number `2`? 
+```ruby
+module MyModule
+  class MyCustomError < StandardError; end
+end
+
+def some_method
+  # some code
+  [YOUR CODE HERE]
+end
+```
+<details><summary><b>Answer</b></summary>
+<p>
+
+`raise MyModule::MyCustomError unless my_array.include?(2)`
+
+</p>
+</details>
+
+---
+
+13. How can you create a new exception class? Select all that apply.
+A. Inherit from `Exception`.
+B. Inherit from any descendant class of `Exception`.
+
+<details><summary><b>Answer</b></summary>
+<p>
+
+A, B
+
+</p>
+</details>
+
+---
+
+14. True or False: RuntimeError is a descendant of StandardError.
+
+<details><summary><b>Answer</b></summary>
+<p>
+
+True
 
 </p>
 </details>
