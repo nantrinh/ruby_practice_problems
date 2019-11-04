@@ -4122,6 +4122,316 @@ C
 </details>
 
 # Hashes
+1. Create an empty hash using the literal constructor.
+<details><summary><b>Answer</b></summary>
+<p>
+
+`{}`
+
+</p>
+</details>
+
+---
+
+2. Create an empty hash with default values of 0 using the `Hash.new` method.
+<details><summary><b>Answer</b></summary>
+<p>
+
+`Hash.new(0)`
+
+</p>
+</details>
+
+---
+
+3. Create a hash with key and value pairs ("one","a"), ("two","b") using the `Hash.[]` method.
+<details><summary><b>Answer</b></summary>
+<p>
+
+`Hash["one", "a", "two", "b"]` or `Hash[[["one", "a"], ["two", "b"]]]`
+
+</p>
+</details>
+
+---
+
+4. Create a hash with key and value pairs (:a: 12), (:b, 30) using the literal constructor and hash rockets. (`=>`) 
+<details><summary><b>Answer</b></summary>
+<p>
+
+`{:a => 12, :b => 30}`
+
+</p>
+</details>
+
+---
+
+5. Create a hash with key and value pairs (:a: 12), (:b, 30) using the literal constructor and the syntactical sugar for symbol keys.
+<details><summary><b>Answer</b></summary>
+<p>
+
+`{a: 12, b: 30}`
+
+</p>
+</details>
+
+---
+
+6. Suppose you have an empty hash `sounds`. Add the key and value pair (:cow, "moo") to the `sounds` hash using the `[]=` method and syntactical sugar.
+<details><summary><b>Answer</b></summary>
+<p>
+
+`sounds[:cow] = "moo"`
+
+</p>
+</details>
+
+---
+
+7. Suppose you have an empty hash `sounds`. Add the key and value pair (:cow, "moo") to the `sounds` hash using the `store` method.
+<details><summary><b>Answer</b></summary>
+<p>
+
+`sounds.store(:cow, "moo")`
+
+</p>
+</details>
+
+---
+
+8. Which of the following are required to be unique in hashes? Select all that apply.
+- A. keys
+- B. values
+- C. neither 
+<details><summary><b>Answer</b></summary>
+<p>
+
+A
+
+</p>
+</details>
+
+---
+
+9. What does the following code output?
+
+```ruby
+hash = {"Jake" => "octopus", "Chandler" => "chicken"}
+hash["Jake"] = "snake" 
+puts hash["Jake"]
+```
+<details><summary><b>Answer</b></summary>
+<p>
+
+`"snake"`
+
+</p>
+</details>
+
+---
+
+10. What happens when you run the following code?
+
+```ruby
+hash = {"Jake" => "octopus", "Chandler" => "chicken"}
+hash["Doreen"]
+```
+<details><summary><b>Answer</b></summary>
+<p>
+
+`nil`
+
+</p>
+</details>
+
+---
+
+11. What happens when you run the following code?
+
+```ruby
+hash = {"Jake" => "octopus", "Chandler" => "chicken"}
+hash.fetch("Doreen")
+```
+<details><summary><b>Answer</b></summary>
+<p>
+
+`KeyError (key not found: "Doreen")`
+
+</p>
+</details>
+
+---
+
+12. What happens when you run the following code?
+
+```ruby
+hash = Hash.new("dog")
+hash["Doreen"]
+```
+<details><summary><b>Answer</b></summary>
+<p>
+
+`"dog"`
+
+</p>
+</details>
+
+---
+
+13. What happens when you run the following code?
+
+```ruby
+hash = Hash.new("dog")
+hash.fetch("Doreen")
+```
+<details><summary><b>Answer</b></summary>
+<p>
+
+`KeyError (key not found: "Doreen")`
+
+</p>
+</details>
+
+---
+
+14. What happens when you run the following code?
+
+```ruby
+hash = Hash.new("dog")
+hash.fetch("Doreen", "monkey")
+```
+<details><summary><b>Answer</b></summary>
+<p>
+
+`"monkey"`
+
+</p>
+</details>
+
+---
+
+15. How can you retrieve values for both "Grace" and "Frankie" in the following hash? `hash = {"Grace" => "salad", "Frankie" => "pancakes", "Sol" => "spinach"}` Use a method that would return the array `["salad", "pancakes"]`. 
+<details><summary><b>Answer</b></summary>
+<p>
+
+`hash.values_at("Grace", "Frankie")`
+
+</p>
+</details>
+
+---
+
+16. What does the following code output?
+
+```ruby
+hash = Hash.new {|h,k| h[k] = 0}
+hash[:a]
+p hash
+```
+<details><summary><b>Answer</b></summary>
+<p>
+
+`{:a => 0}`
+
+</p>
+</details>
+
+---
+
+17. Which of the following statements are true given the code below? 
+
+```ruby
+h1 = {"muffin" => 2.50,
+      "coffee" => 2.00}
+h2 = {"sparkling water" => 1.80,
+      "coffee" => 3.20}
+h1.update(h2)
+```
+- A. A new hash is returned containing the following key and value pairs: `{"muffin" => 2.50, "coffee" => 2.00, "sparkling water" => 1.80, "coffee" => 3.20}`
+- B. A new hash is returned containing the following key and value pairs: `{"muffin" => 2.50, "coffee" => 2.00, "sparkling water" => 1.80}`
+- C. A new hash is returned containing the following key and value pairs: `{"muffin" => 2.50, "coffee" => 3.20, "sparkling water" => 1.80}`
+- D. h1 is updated to contain the following key and value pairs: `{"muffin" => 2.50, "coffee" => 2.00, "sparkling water" => 1.80}`
+- E. h1 is updated to contain the following key and value pairs: `{"muffin" => 2.50, "coffee" => 3.20, "sparkling water" => 1.80}`
+- F. h2 is updated to contain the following key and value pairs: `{"muffin" => 2.50, "coffee" => 2.00, "sparkling water" => 1.80}`
+- G. h2 is updated to contain the following key and value pairs: `{"muffin" => 2.50, "coffee" => 3.20, "sparkling water" => 1.80}`
+<details><summary><b>Answer</b></summary>
+<p>
+
+E
+
+</p>
+</details>
+
+---
+
+18. Which of the following statements are true given the code below? 
+
+```ruby
+h1 = {"muffin" => 2.50,
+      "coffee" => 2.00}
+h2 = {"sparkling water" => 1.80,
+      "coffee" => 3.20}
+h1.merge(h2)
+```
+- A. A new hash is returned containing the following key and value pairs: `{"muffin" => 2.50, "coffee" => 2.00, "sparkling water" => 1.80, "coffee" => 3.20}`
+- B. A new hash is returned containing the following key and value pairs: `{"muffin" => 2.50, "coffee" => 2.00, "sparkling water" => 1.80}`
+- C. A new hash is returned containing the following key and value pairs: `{"muffin" => 2.50, "coffee" => 3.20, "sparkling water" => 1.80}`
+- D. h1 is updated to contain the following key and value pairs: `{"muffin" => 2.50, "coffee" => 2.00, "sparkling water" => 1.80}`
+- E. h1 is updated to contain the following key and value pairs: `{"muffin" => 2.50, "coffee" => 3.20, "sparkling water" => 1.80}`
+- F. h2 is updated to contain the following key and value pairs: `{"muffin" => 2.50, "coffee" => 2.00, "sparkling water" => 1.80}`
+- G. h2 is updated to contain the following key and value pairs: `{"muffin" => 2.50, "coffee" => 3.20, "sparkling water" => 1.80}`
+<details><summary><b>Answer</b></summary>
+<p>
+
+C
+
+</p>
+</details>
+
+---
+
+19. Given the hash `my_hash`, use the `select` method to return a new hash containing only those elements from `my_hash` where the value is greater than 10. Assume all values in `my_hash` are Integers.
+<details><summary><b>Answer</b></summary>
+<p>
+
+`my_hash.select {|_,v| v > 10}`
+
+</p>
+</details>
+
+---
+
+20. Given the hash `my_hash`, use the `reject` method to return a new hash containing all of the elements from `my_hash` except those where the key is less than 100. Assume all keys in `my_hash` are Integers.
+<details><summary><b>Answer</b></summary>
+<p>
+
+`my_hash.reject {|k, _| k < 100}`
+
+</p>
+</details>
+
+---
+
+21. Name at least 2 methods that return true if the hash `h` includes the key `k`, as expressed in this usage: `h.method(k)`
+<details><summary><b>Answer</b></summary>
+<p>
+
+`has_key?`, `key?`, `include?`, `member?`
+
+</p>
+</details>
+
+---
+
+22. Name at least 1 method that returns true if the hash `h` includes the value `v`, as expressed in this usage: `h.method(v)`
+
+<details><summary><b>Answer</b></summary>
+<p>
+
+`has_value?`, `value?`
+
+</p>
+</details>
 
 # Ranges and Sets
 
