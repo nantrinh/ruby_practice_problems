@@ -4434,7 +4434,7 @@ C
 </details>
 
 # Ranges and Sets
-1. Use the literal constructor to create a range of the numbers 1, 2, 3, 4, 5.
+1. Use the literal constructor to create a range of the numbers `1`, `2`, `3`, `4`, `5`.
 <details><summary><b>Answer</b></summary>
 <p>
 
@@ -4468,7 +4468,7 @@ C
 
 ---
 
-4. Which Range method treats the range as a collection of values, and returns true if the argument to the method is among the values in the collection?
+4. Which `Range` method treats the range as a collection of values, and returns `true` if the argument to the method is among the values in the collection?
 <details><summary><b>Answer</b></summary>
 <p>
 
@@ -4495,9 +4495,9 @@ A, B
 ---
 
 6. Which of the following statements return `true`, given `r = "a".."z"`? Select all that apply.
-- A. r.include?("k")
-- B. r.include?("cat")
-- C. r.include?("P")
+- A. `r.include?("k")`
+- B. `r.include?("cat")`
+- C. `r.include?("P")`
 - D. None of the above
 <details><summary><b>Answer</b></summary>
 <p>
@@ -4510,9 +4510,9 @@ A
 ---
 
 7. Which of the following statements return `true`, given `r = "z".."a"`? Select all that apply.
-- A. r.cover?("k")
-- B. r.cover?("cat")
-- C. r.cover?("P")
+- A. `r.cover?("k")`
+- B. `r.cover?("cat")`
+- C. `r.cover?("P")`
 - D. None of the above
 <details><summary><b>Answer</b></summary>
 <p>
@@ -4525,9 +4525,9 @@ D
 ---
 
 8. Which of the following statements return `true`, given `r = "z".."a"`? Select all that apply.
-- A. r.include?("k")
-- B. r.include?("cat")
-- C. r.include?("P")
+- A. `r.include?("k")`
+- B. `r.include?("cat")`
+- C. `r.include?("P")`
 - D. None of the above
 <details><summary><b>Answer</b></summary>
 <p>
@@ -4540,8 +4540,8 @@ D
 ---
 
 9. Which of the following statements return `true`, given `r = 1..100`? Select all that apply.
-- A. r.cover?(3)
-- B. r.cover?(5.5)
+- A. `r.cover?(3)`
+- B. `r.cover?(5.5)`
 - C. None of the above
 <details><summary><b>Answer</b></summary>
 <p>
@@ -4554,8 +4554,8 @@ A, B
 ---
 
 10. Which of the following statements return `true`, given `r = 1..100`? Select all that apply.
-- A. r.include?(3)
-- B. r.include?(5.5)
+- A. `r.include?(3)`
+- B. `r.include?(5.5)`
 - C. None of the above
 <details><summary><b>Answer</b></summary>
 <p>
@@ -4568,8 +4568,8 @@ A
 ---
 
 11. Which of the following statements return `true`, given `r = 100..1`? Select all that apply.
-- A. r.cover?(3)
-- B. r.cover?(5.5)
+- A. `r.cover?(3)`
+- B. `r.cover?(5.5)`
 - C. None of the above
 <details><summary><b>Answer</b></summary>
 <p>
@@ -4582,8 +4582,8 @@ C
 ---
 
 12. Which of the following statements return `true`, given `r = 100..1`? Select all that apply.
-- A. r.include?(3)
-- B. r.include?(5.5)
+- A. `r.include?(3)`
+- B. `r.include?(5.5)`
 - C. None of the above
 <details><summary><b>Answer</b></summary>
 <p>
@@ -4722,8 +4722,7 @@ C
 <details><summary><b>Answer</b></summary>
 <p>
 
-`add?` returns `nil` if the set is unchanged after the operation.
-`add` would return the set itself.
+If the set is unchanged after the operation, `add` would return the set but `add?` would return `nil`.
 
 </p>
 </details>
@@ -4782,8 +4781,8 @@ lang_2 = Set.new(["Python"])
 lang_1.merge(lang_2)
 ```
 - A. A new set is returned: `#<Set: {"Ruby", "Javascript", "Python"}>` 
-- B. lang_1 is updated to the following: `#<Set: {"Ruby", "Javascript", "Python"}>` 
-- C. lang_2 is updated to the following: `#<Set: {"Ruby", "Javascript", "Python"}>` 
+- B. `lang_1` is updated to the following: `#<Set: {"Ruby", "Javascript", "Python"}>` 
+- C. `lang_2` is updated to the following: `#<Set: {"Ruby", "Javascript", "Python"}>` 
 - D. You get an error.
 <details><summary><b>Answer</b></summary>
 <p>
@@ -4802,15 +4801,15 @@ library_books = Set.new(['The Poet X', "Meditations", "Oathbringer"])
 my_books = Set.new(["Oathbringer", "Meditations"])
 your_books = Set.new(['The Poet X', "Meditations", "Oathbringer"]) 
 ```
-- A. library_books.superset?(my_books)
-- B. library_books.superset?(your_books)
-- C. library_books.proper_superset?(my_books)
-- D. library_books.proper_superset?(your_books)
-- E. my_books.superset?(library_books)
-- F. my_books.superset?(your_books)
-- G. my_books.subset?(library_books)
-- H. my_books.proper_subset?(library_books)
-- I. your_books.proper_subset?(library_books)
+- A. `library_books.superset?(my_books)`
+- B. `library_books.superset?(your_books)`
+- C. `library_books.proper_superset?(my_books)`
+- D. `library_books.proper_superset?(your_books)`
+- E. `my_books.superset?(library_books)`
+- F. `my_books.superset?(your_books)`
+- G. `my_books.subset?(library_books)`
+- H. `my_books.proper_subset?(library_books)`
+- I. `your_books.proper_subset?(library_books)`
 
 <details><summary><b>Answer</b></summary>
 <p>
