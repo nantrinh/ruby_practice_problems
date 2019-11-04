@@ -4434,6 +4434,391 @@ C
 </details>
 
 # Ranges and Sets
+1. Use the literal constructor to create a range of the numbers 1, 2, 3, 4, 5.
+<details><summary><b>Answer</b></summary>
+<p>
+
+`(1..5)` or `(1...6)`
+
+</p>
+</details>
+
+---
+
+2. What is the difference between `1..10` and `1...10`?
+<details><summary><b>Answer</b></summary>
+<p>
+
+`1..10` includes `10`.
+`1...10` does not.
+
+</p>
+</details>
+
+---
+
+3. Which `Range` method returns `true` if the argument to the method is greater than the range's start point and less than its end point (or equal to the end point, for an inclusive range)?
+<details><summary><b>Answer</b></summary>
+<p>
+
+`cover?`
+
+</p>
+</details>
+
+---
+
+4. Which Range method treats the range as a collection of values, and returns true if the argument to the method is among the values in the collection?
+<details><summary><b>Answer</b></summary>
+<p>
+
+`include?`
+
+</p>
+</details>
+
+---
+
+5. Which of the following statements return `true`, given `r = "a".."z"`? Select all that apply.
+- A. `r.cover?("k")`
+- B. `r.cover?("cat")`
+- C. `r.cover?("P")`
+- D. None of the above
+<details><summary><b>Answer</b></summary>
+<p>
+
+A, B
+
+</p>
+</details>
+
+---
+
+6. Which of the following statements return `true`, given `r = "a".."z"`? Select all that apply.
+- A. r.include?("k")
+- B. r.include?("cat")
+- C. r.include?("P")
+- D. None of the above
+<details><summary><b>Answer</b></summary>
+<p>
+
+A
+
+</p>
+</details>
+
+---
+
+7. Which of the following statements return `true`, given `r = "z".."a"`? Select all that apply.
+- A. r.cover?("k")
+- B. r.cover?("cat")
+- C. r.cover?("P")
+- D. None of the above
+<details><summary><b>Answer</b></summary>
+<p>
+
+D
+
+</p>
+</details>
+
+---
+
+8. Which of the following statements return `true`, given `r = "z".."a"`? Select all that apply.
+- A. r.include?("k")
+- B. r.include?("cat")
+- C. r.include?("P")
+- D. None of the above
+<details><summary><b>Answer</b></summary>
+<p>
+
+D
+
+</p>
+</details>
+
+---
+
+9. Which of the following statements return `true`, given `r = 1..100`? Select all that apply.
+- A. r.cover?(3)
+- B. r.cover?(5.5)
+- C. None of the above
+<details><summary><b>Answer</b></summary>
+<p>
+
+A, B
+
+</p>
+</details>
+
+---
+
+10. Which of the following statements return `true`, given `r = 1..100`? Select all that apply.
+- A. r.include?(3)
+- B. r.include?(5.5)
+- C. None of the above
+<details><summary><b>Answer</b></summary>
+<p>
+
+A
+
+</p>
+</details>
+
+---
+
+11. Which of the following statements return `true`, given `r = 100..1`? Select all that apply.
+- A. r.cover?(3)
+- B. r.cover?(5.5)
+- C. None of the above
+<details><summary><b>Answer</b></summary>
+<p>
+
+C
+
+</p>
+</details>
+
+---
+
+12. Which of the following statements return `true`, given `r = 100..1`? Select all that apply.
+- A. r.include?(3)
+- B. r.include?(5.5)
+- C. None of the above
+<details><summary><b>Answer</b></summary>
+<p>
+
+C
+
+</p>
+</details>
+
+---
+
+13. What line of code do you need to include in your file to use the `Set` class? Why? For the rest of the set-related questions, assume that this line of code has been run.
+<details><summary><b>Answer</b></summary>
+<p>
+
+`require 'set'`, because `Set` is a standard library class. If it was a core class, you would not need to do this.
+
+</p>
+</details>
+
+---
+
+14. Create a set using the `Set.new` constructor, with the elements `"banana"`, `"bagel"`, and `"lettuce"`.
+<details><summary><b>Answer</b></summary>
+<p>
+
+`Set.new(["banana", "bagel", "lettuce"])`
+
+</p>
+</details>
+
+---
+
+15. Is there a literal constructor for sets?
+<details><summary><b>Answer</b></summary>
+<p>
+
+No, because sets are part of the standard library, not the core.
+
+</p>
+</details>
+
+---
+
+16. Which of the following happens when you run the code below?
+
+```ruby
+groceries = Set.new(["apple", "cheese", "milk"])
+groceries << "cheese"
+```
+- A. `groceries` now contains only `"apple"` and `"milk"`.
+- B. You get an error.
+- C. You get a warning.
+- D. `groceries` still contains only `"apple"`, `"cheese"`, and `"milk"`.
+<details><summary><b>Answer</b></summary>
+<p>
+
+D
+
+</p>
+</details>
+
+---
+
+17. Which of the following happens when you run the code below?
+
+```ruby
+groceries = Set.new(["apple", "cheese", "milk"])
+groceries << "scallions"
+```
+- A. `groceries` now contains `"apple"`, `"cheese"`, `"milk"`, and `"scallions"`.
+- B. You get an error.
+- C. You get a warning.
+- D. `groceries` still contains `"apple"`, `"cheese"`, and `"milk"`.
+<details><summary><b>Answer</b></summary>
+<p>
+
+A
+
+</p>
+</details>
+
+---
+
+18. Which of the following happens when you run the code below?
+
+```ruby
+groceries = Set.new(["apple", "cheese", "milk"])
+groceries.delete("apple")
+```
+- A. `groceries` now contains only `"cheese"` and `"milk"`.
+- B. You get an error.
+- C. You get a warning.
+- D. `groceries` still contains `"apple"`, `"cheese"`, and `"milk"`.
+<details><summary><b>Answer</b></summary>
+<p>
+
+A
+
+</p>
+</details>
+
+---
+
+19. Which of the following happens when you run the code below?
+
+```ruby
+groceries = Set.new(["apple", "cheese", "milk"])
+groceries.delete("bread")
+```
+- A. You get an error.
+- B. You get a warning.
+- C. Nothing happens. `groceries` still contains `"apple", "cheese", "milk"`.
+<details><summary><b>Answer</b></summary>
+<p>
+
+C
+
+</p>
+</details>
+
+---
+
+20. What `Set` method is an alias for `<<`?
+<details><summary><b>Answer</b></summary>
+<p>
+
+`add`
+
+</p>
+</details>
+
+---
+
+21. What is the difference between the Set methods `add` and `add?`?
+<details><summary><b>Answer</b></summary>
+<p>
+
+`add?` returns `nil` if the set is unchanged after the operation.
+`add` would return the set itself.
+
+</p>
+</details>
+
+---
+
+22. Suppose you have the sets `set_a` and `set_b`. Write a statement that returns a new set containing only the elements that appear in both `set_a` and `set_b`. Use a `Set` method.
+<details><summary><b>Answer</b></summary>
+<p>
+
+`set_a & set_b` or `set_a.intersection(set_b)`
+
+</p>
+</details>
+
+---
+
+23. Suppose you have the sets `set_a` and `set_b`. Write a statement that returns a new set containing items that appear in either `set_a` or `set_b`, or both. Use a `Set` method.
+<details><summary><b>Answer</b></summary>
+<p>
+
+`set_a | set_b`, `set_a + set_b`, or `set_a.union(set_b)`
+
+</p>
+</details>
+
+---
+
+24. Suppose you have the sets `set_a` and `set_b`. Write a statement that returns all items in set_a that do not show up in in set_b. Use a `Set` method.
+<details><summary><b>Answer</b></summary>
+<p>
+
+`set_a - set_b` or `set_a.difference(set_b)`
+
+</p>
+</details>
+
+---
+
+25. Suppose you have the sets `set_a` and `set_b`. Write a statement that returns the items that only show up in either `set_a` or `set_b` but not both. Use a Set method.
+<details><summary><b>Answer</b></summary>
+<p>
+
+`set_a ^ set_b` or `(set_a | set_b) - (set_a & set_b)`
+
+</p>
+</details>
+
+---
+
+26. Which of the following statements would be true after the code below is run? Select all that apply.
+
+```ruby
+lang_1 = Set.new(["Ruby", "Javascript"])
+lang_2 = Set.new(["Python"])
+lang_1.merge(lang_2)
+```
+- A. A new set is returned: `#<Set: {"Ruby", "Javascript", "Python"}>` 
+- B. lang_1 is updated to the following: `#<Set: {"Ruby", "Javascript", "Python"}>` 
+- C. lang_2 is updated to the following: `#<Set: {"Ruby", "Javascript", "Python"}>` 
+- D. You get an error.
+<details><summary><b>Answer</b></summary>
+<p>
+
+B
+
+</p>
+</details>
+
+---
+
+27. Which of the following statements would return `true` given the code below?
+
+```ruby
+library_books = Set.new(['The Poet X', "Meditations", "Oathbringer"]) 
+my_books = Set.new(["Oathbringer", "Meditations"])
+your_books = Set.new(['The Poet X', "Meditations", "Oathbringer"]) 
+```
+- A. library_books.superset?(my_books)
+- B. library_books.superset?(your_books)
+- C. library_books.proper_superset?(my_books)
+- D. library_books.proper_superset?(your_books)
+- E. my_books.superset?(library_books)
+- F. my_books.superset?(your_books)
+- G. my_books.subset?(library_books)
+- H. my_books.proper_subset?(library_books)
+- I. your_books.proper_subset?(library_books)
+
+<details><summary><b>Answer</b></summary>
+<p>
+
+A, B, C, G, H
+
+</p>
+</details>
 
 # Regular Expressions
 
