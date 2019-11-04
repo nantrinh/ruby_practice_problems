@@ -1,6 +1,6 @@
 # Ruby Practice Problems
 
-I created 346 questions to review Ruby syntax and concepts covered in _The Well Grounded Rubyist_ by David Black. Each question tests a specific concept in the book.
+I created 346 questions to review Ruby syntax and concepts covered in _The Well-Grounded Rubyist_ by David Black. Each question tests a specific concept in the book.
 
 Some questions are designed to raise errors. The answers listed for those questions would be the appropriate error (e.g., `NameError`, `ArgumentError`).
 
