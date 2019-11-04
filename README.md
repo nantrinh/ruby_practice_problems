@@ -1,6 +1,6 @@
 # Ruby Practice Problems
 
-I created 347 questions to review Ruby syntax and concepts covered in _The Well Grounded Rubyist_ by David Black. Each question tests a specific concept in the book.
+I created 346 questions to review Ruby syntax and concepts covered in _The Well Grounded Rubyist_ by David Black. Each question tests a specific concept in the book.
 
 Some questions are designed to raise errors. The answers listed for those questions would be the appropriate error (e.g., `NameError`, `ArgumentError`).
 
@@ -21,7 +21,7 @@ Some questions are designed to raise errors. The answers listed for those questi
 | 11 | [Arrays](#arrays) | 48 |
 | 12 | [Hashes](#hashes) | 22 |
 | 13 | [Ranges and Sets](#ranges-and-sets) | 27 |
-| 14 | [Regular Expressions](#regular-expressions) | 34 |
+| 14 | [Regular Expressions](#regular-expressions) | 33 |
 | 15 | [Procs and Lambdas](#procs-and-lambdas) | 18 |
 
 # Ruby Basics
@@ -4820,5 +4820,368 @@ A, B, C, G, H
 </details>
 
 # Regular Expressions
+There are multiple ways to answer some of these questions. Test your answers in irb if they differ from the given answers.
+
+1. What does the following code return? `/abc/.match("Hello abcdefg").class`
+<details><summary><b>Answer</b></summary>
+<p>
+
+`MatchData`
+
+</p>
+</details>
+
+---
+
+2. What does the following code return? `"Hello abcdefg".match(/abc/).class`
+<details><summary><b>Answer</b></summary>
+<p>
+
+`MatchData`
+
+</p>
+</details>
+
+---
+
+3. What does the following code return? `"Hello abcdefg".match(/123/)`
+<details><summary><b>Answer</b></summary>
+<p>
+
+`nil`
+
+</p>
+</details>
+
+---
+
+4. What does the following code return? `/123/.match("Hello abcdefg")`
+<details><summary><b>Answer</b></summary>
+<p>
+
+`nil`
+
+</p>
+</details>
+
+---
+
+5. What does the following code return? `/abc/ =~ "Alpha abc"`
+<details><summary><b>Answer</b></summary>
+<p>
+
+`6`
+
+</p>
+</details>
+
+---
+
+6. True or False: `/abc/ =~ "Alpha abc"` is equivalent to `"Alpha abc" =~ /abc/`
+<details><summary><b>Answer</b></summary>
+<p>
+
+True
+
+</p>
+</details>
+
+---
+
+7. Some characters have special meanings to the regexp parser. When you want to match one of these special characters as itself. what do you have to do?
+<details><summary><b>Answer</b></summary>
+<p>
+
+Escape it with the backslash character `\`
+
+</p>
+</details>
+
+---
+
+8. What special character can you use to match any character, except newline?
+<details><summary><b>Answer</b></summary>
+<p>
+
+The dot wildcard character `.`
+
+</p>
+</details>
+
+---
+
+9. Use a character class to write a pattern that would match either `"t"` or `"b"`, followed by `"ees"`. In other words, it would match `"tees"` and `"bees"`, but not `"sees"`.
+<details><summary><b>Answer</b></summary>
+<p>
+
+`/[tb]ees/`
+
+</p>
+</details>
+
+---
+
+10. True or False: `/[br]ead/ =~ "bread"` returns `nil`.
+<details><summary><b>Answer</b></summary>
+<p>
+
+False
+
+</p>
+</details>
+
+---
+
+11. Use a character class to write a pattern that would match any lowercase or uppercase letter.
+<details><summary><b>Answer</b></summary>
+<p>
+
+`/[a-z]/i` or `[a-zA-Z]` or `[A-Za-z]`
+
+</p>
+</details>
+
+---
+
+12. There exists special escape sequences for some common character sequences. What is the special escape sequence to match any digit?
+<details><summary><b>Answer</b></summary>
+<p>
+
+`\d`
+
+</p>
+</details>
+
+---
+
+13. What is the special escape sequence to match any digit, alphabetical character, or underscore?
+<details><summary><b>Answer</b></summary>
+<p>
+
+`\w`
+
+</p>
+</details>
+
+---
+
+14. What is the special escape sequence to match any whitespace character (space, tab, newline)?
+<details><summary><b>Answer</b></summary>
+<p>
+
+`\s`
+
+</p>
+</details>
+
+---
+
+15. What are the negated forms of the special character sequences to match (1) any digit, (2) any digit, alphabetical character, or underscore, and (3) any whitespace character (space, tab, newline)?
+<details><summary><b>Answer</b></summary>
+<p>
+
+`\D`, `\W`, `\S`
+
+</p>
+</details>
+
+---
+
+16. True or False: When using the special character sequences, you must enclose them in square brackets, as you would for a regular character class.
+<details><summary><b>Answer</b></summary>
+<p>
+
+False
+
+</p>
+</details>
+
+---
+
+17. Write a pattern that would capture the first name and last name from the following string: "Elizabeth Acevedo, eacevedo@email.com"
+<details><summary><b>Answer</b></summary>
+<p>
+
+`/([A-Za-z]+) ([A-Za-z]+)/`
+
+</p>
+</details>
+
+---
+
+18. Write a pattern that would capture the email address from the following string: "Elizabeth Acevedo, eacevedo@email.com"
+<details><summary><b>Answer</b></summary>
+<p>
+
+`/([a-z]+@[a-z]+\.[a-z]+)/`
+
+</p>
+</details>
+
+---
+
+19. Suppose you have a `MatchData` object `m` containing some captures. What are two ways you can access the third capture?
+<details><summary><b>Answer</b></summary>
+<p>
+
+`m[3]` or `m.captures[2]`
+
+</p>
+</details>
+
+---
+
+20. Suppose you have a `MatchData` object containing some captures. What `MatchData` method can you use to get the part of the string before the part that matched? What `MatchData` method can you use to get the part of the string after the part that matched?
+<details><summary><b>Answer</b></summary>
+<p>
+
+`pre_match`; `post_match`
+
+</p>
+</details>
+
+---
+
+21. True or False: All quantifiers operate either on a single character (which may be represented by a character class) or on a parenthetical group.
+<details><summary><b>Answer</b></summary>
+<p>
+
+True
+
+</p>
+</details>
+
+---
+
+22. Write a pattern that uses the zero-or-one quantifier to match either "hi", "his", but NOT "hiss".
+<details><summary><b>Answer</b></summary>
+<p>
+
+`/his?/`
+
+</p>
+</details>
+
+---
+
+23. Write a pattern that uses the zero-or-more quantifier to match either "hi", "his", "hiss", or "hissssssss". 
+<details><summary><b>Answer</b></summary>
+<p>
+
+`/his*/`
+
+</p>
+</details>
+
+---
+
+24. Write a pattern that uses the one-or-more quantifier to match any sequence of one or more consecutive digits.
+<details><summary><b>Answer</b></summary>
+<p>
+
+`/\d+/`
+
+</p>
+</details>
+
+---
+
+25. Write a pattern that matches exactly 5 digits, followed by a hyphen(-), followed by exactly 4 digits.
+<details><summary><b>Answer</b></summary>
+<p>
+
+`/\d{5}-\d{4}/`
+
+</p>
+</details>
+
+---
+
+26. Write a pattern that matches 2 to 10 digits, followed by a hyphen(-), followed by 2 to 5 digits.
+<details><summary><b>Answer</b></summary>
+<p>
+
+`/\d{2,10}-\d{2,5}/`
+
+</p>
+</details>
+
+---
+
+27. Write a pattern that matches exactly 2 digits, followed by a hyphen(-), followed by 5 or more digits.
+<details><summary><b>Answer</b></summary>
+<p>
+
+`/\d{2}-\d{5,}/`
+
+</p>
+</details>
+
+---
+
+28. What is the anchor for beginning of line? What is the anchor for end of line?
+<details><summary><b>Answer</b></summary>
+<p>
+
+`^`; `$`
+
+</p>
+</details>
+
+---
+
+29. What is the anchor for beginning of a string? What is the anchor for end of string (including the final newline)? What is the anchor for end of the string (NOT including the final newline)?
+<details><summary><b>Answer</b></summary>
+<p>
+
+`\A`, `\z`, `\Z`
+
+</p>
+</details>
+
+---
+
+30. What is the anchor for word boundary?
+<details><summary><b>Answer</b></summary>
+<p>
+
+`\b`
+
+</p>
+</details>
+
+---
+
+31. Write a pattern to match either "abc" or "ABC". Use the case-insensitive modifier.
+<details><summary><b>Answer</b></summary>
+<p>
+
+`/abc/i`
+
+</p>
+</details>
+
+---
+
+32. Which modifier has the effect that the wildcard dot character, which normally matches any character except newline, will match any character, including newline? This is useful when you want to capture everything between, for example, an opening and closing parenthesis, and you do not care whether they are on the same line. 
+<details><summary><b>Answer</b></summary>
+<p>
+
+the multi-line modifier `m`
+
+</p>
+</details>
+
+---
+
+33. Which `String` method goes from left to right in a string, testing repeatedly for a match with the specified pattern, and returns the matches in array?
+
+<details><summary><b>Answer</b></summary>
+<p>
+
+`scan`
+
+</p>
+</details>
 
 # Procs and Lambdas
