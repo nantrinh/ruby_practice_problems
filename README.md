@@ -4230,7 +4230,7 @@ puts hash["Jake"]
 
 ---
 
-10. What happens when you run the following code?
+10. What is returned from executing the following code?
 
 ```ruby
 hash = {"Jake" => "octopus", "Chandler" => "chicken"}
@@ -4246,7 +4246,7 @@ hash["Doreen"]
 
 ---
 
-11. What happens when you run the following code?
+11. What is returned from executing the following code?
 
 ```ruby
 hash = {"Jake" => "octopus", "Chandler" => "chicken"}
@@ -4262,7 +4262,7 @@ hash.fetch("Doreen")
 
 ---
 
-12. What happens when you run the following code?
+12. What is returned from executing the following code?
 
 ```ruby
 hash = Hash.new("dog")
@@ -4278,7 +4278,7 @@ hash["Doreen"]
 
 ---
 
-13. What happens when you run the following code?
+13. What is returned from executing the following code?
 
 ```ruby
 hash = Hash.new("dog")
@@ -4294,7 +4294,7 @@ hash.fetch("Doreen")
 
 ---
 
-14. What happens when you run the following code?
+14. What is returned from executing the following code?
 
 ```ruby
 hash = Hash.new("dog")
