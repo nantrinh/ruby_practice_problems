@@ -24,7 +24,7 @@ end
 
 def label_code_snippets(text, language="ruby")
   found = 0
-  code_snippet = /```\n/
+  code_snippet = /\n```\n/
   modified = text.gsub(code_snippet) do |str|
     found += 1
     found.odd? ? "#{str[0..-2]}#{language}\n" : str
