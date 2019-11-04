@@ -5185,3 +5185,225 @@ the multi-line modifier `m`
 </details>
 
 # Procs and Lambdas
+1. Create a `Proc` object by instantiating the `Proc` class with a code block `{puts "Hello"}`. 
+<details><summary><b>Answer</b></summary>
+<p>
+
+`Proc.new {puts "Hello"}`
+
+</p>
+</details>
+
+---
+
+2. True or False: When you create a `Proc` object, you must supply a code block.
+<details><summary><b>Answer</b></summary>
+<p>
+
+True
+
+</p>
+</details>
+
+---
+
+3. True or False: Every code block serves as the basis of a proc.
+<details><summary><b>Answer</b></summary>
+<p>
+
+False
+
+</p>
+</details>
+
+---
+
+4. True or False: A code block is an object.
+<details><summary><b>Answer</b></summary>
+<p>
+
+False
+
+</p>
+</details>
+
+---
+
+5. True or False: Procs can serve as code blocks.
+<details><summary><b>Answer</b></summary>
+<p>
+
+True
+
+</p>
+</details>
+
+---
+
+6. What does the `&` in `my_method(&p)` do?
+
+```ruby
+def my_method(&block)
+  block.call
+end
+
+p = Proc.new {puts "Hello"}
+my_method(&p)
+```
+<details><summary><b>Answer</b></summary>
+<p>
+
+`&` triggers a call to `p`'s `to_proc` method and tells Ruby that the resulting `Proc` object is serving as a code block stand-in.
+
+</p>
+</details>
+
+---
+
+7. Suppose you have an array of words, `words`. How would you use the `Symbol#to_proc` method to return a new array where each word in `words` is capitalized?
+<details><summary><b>Answer</b></summary>
+<p>
+
+`words.map(&:capitalize)`
+
+</p>
+</details>
+
+---
+
+8. True or False: `array.map(&:to_i)` is equivalent to `array.map {|x| x.to_i}`
+<details><summary><b>Answer</b></summary>
+<p>
+
+True
+
+</p>
+</details>
+
+---
+
+9. True or False: `array.map(&:to_i)` is equivalent to `array.map {|x| x.send(:to_i)}`
+<details><summary><b>Answer</b></summary>
+<p>
+
+True
+
+</p>
+</details>
+
+---
+
+10. What is the term for a piece of code that carries its creation context around with it?
+<details><summary><b>Answer</b></summary>
+<p>
+
+closure
+
+</p>
+</details>
+
+---
+
+11. What does the following code output?
+
+```ruby
+def make_counter
+  n = 0
+  return Proc.new { n+= 1 }
+end
+
+c = make_counter
+puts c.call
+d = make_counter
+puts d.call
+puts d.call
+```
+<details><summary><b>Answer</b></summary>
+<p>
+
+```
+1
+1
+2
+```
+
+</p>
+</details>
+
+---
+
+12. True or False: Procs enforce argument count.
+<details><summary><b>Answer</b></summary>
+<p>
+
+False
+
+</p>
+</details>
+
+---
+
+13. True or False: The `lambda` method returns a `Proc` object.
+<details><summary><b>Answer</b></summary>
+<p>
+
+True
+
+</p>
+</details>
+
+---
+
+14. True or False: Lambdas enforce argument count.
+<details><summary><b>Answer</b></summary>
+<p>
+
+True
+
+</p>
+</details>
+
+---
+
+15. Is the following sentence true of a lambda or a proc? `return` inside a (lambda/proc) triggers an exit from the body of the (lambda/proc) to the context immediately containing the (lambda/proc).
+<details><summary><b>Answer</b></summary>
+<p>
+
+lambda
+
+</p>
+</details>
+
+---
+
+16. Is the following sentence true of a lambda or a proc? `return` inside a (lambda/proc) triggers a return from the method in which the (lambda/proc) is being executed. 
+<details><summary><b>Answer</b></summary>
+<p>
+
+proc
+
+</p>
+</details>
+
+---
+
+17. Instantiate a lambda using the `lambda` method, with a code block `{ puts "Hi" }`.
+<details><summary><b>Answer</b></summary>
+<p>
+
+`lambda {puts "Hi"}`
+
+</p>
+</details>
+
+---
+
+18. Instantiate a lambda using the "stabby lambda" literal constructor, with a code block `{ puts "Hi" }`.
+
+<details><summary><b>Answer</b></summary>
+<p>
+
+`-> {puts "Hi"}`
+
+</p>
+</details>
