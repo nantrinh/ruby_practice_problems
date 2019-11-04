@@ -3555,6 +3555,571 @@ _The Well-Grounded Rubyist_ page 239-240:
 </details>
 
 # Arrays
+1. Create an Array with elements 1, 2, 3, 4, 5 using the `Array.new` method.
+<details><summary><b>Answer</b></summary>
+<p>
+
+`Array.new([1, 2, 3, 4, 5])`
+
+</p>
+</details>
+
+---
+
+2. Create an Array with elements 1, 2, 3, 4, 5 using the literal array constructor.
+<details><summary><b>Answer</b></summary>
+<p>
+
+`[1, 2, 3, 4, 5]`
+
+</p>
+</details>
+
+---
+
+3. What does the following code return? `Array.new(2)`
+<details><summary><b>Answer</b></summary>
+<p>
+
+`[nil, nil]`
+
+</p>
+</details>
+
+---
+
+4. What does the following code return? `Array.new(3, "hello")`
+<details><summary><b>Answer</b></summary>
+<p>
+
+`["hello", "hello", "hello"]`
+
+</p>
+</details>
+
+---
+
+5. What does the following code return? `n = 0; Array.new(3) {n += 2; "#{n} dogs"}`
+<details><summary><b>Answer</b></summary>
+<p>
+
+`["2 dogs", "4 dogs", "6 dogs"]`
+
+</p>
+</details>
+
+---
+
+6. When you run `Array.new(3, "hello")` are the resulting objects in the Array the same object, or different objects?
+<details><summary><b>Answer</b></summary>
+<p>
+
+same object
+
+</p>
+</details>
+
+---
+
+7. When you run `Array.new(3) {"hello"}` are the resulting objects in the Array the same object, or different objects?
+<details><summary><b>Answer</b></summary>
+<p>
+
+different objects
+
+</p>
+</details>
+
+---
+
+8. What does the following code return? `[1, 2, 3][1]`
+<details><summary><b>Answer</b></summary>
+<p>
+
+`2`
+
+</p>
+</details>
+
+---
+
+9. What does the following code return? `%w{ Did you get that? }`
+<details><summary><b>Answer</b></summary>
+<p>
+
+`["Did", "you", "get", "that?"]`
+
+</p>
+</details>
+
+---
+
+10. What does the following code return? `%w{ orange\ juice carrots oatmeal }`
+<details><summary><b>Answer</b></summary>
+<p>
+
+`["orange juice", "carrots", "oatmeal"]`
+
+</p>
+</details>
+
+---
+
+11. What does the following code return? `%w{ The cost is $#{5 + 10} }`
+<details><summary><b>Answer</b></summary>
+<p>
+
+`["The", "cost", "is", "$\#{5", "+", "10}"]`
+
+</p>
+</details>
+
+---
+
+12. What does the following code return? `%W{ The cost is $#{5 + 10} }`
+<details><summary><b>Answer</b></summary>
+<p>
+
+`["The", "cost", "is", "$15"]`
+
+</p>
+</details>
+
+---
+
+13. What is the difference between the %w and %W constructor?
+<details><summary><b>Answer</b></summary>
+<p>
+
+`%w` parses the strings in the list as single-quoted strings.
+`%W` parses the strings in the list as double-quoted strings.
+
+</p>
+</details>
+
+---
+
+14. What does the following code return? `%i{ a b c }`
+<details><summary><b>Answer</b></summary>
+<p>
+
+`[:a, :b, :c]`
+
+</p>
+</details>
+
+---
+
+15. What does the following code return? ` %I{ #{"ab" + "cd"} }`
+<details><summary><b>Answer</b></summary>
+<p>
+
+`[:abcd]`
+
+</p>
+</details>
+
+---
+
+16. What is the difference between the %i and %I constructor?
+<details><summary><b>Answer</b></summary>
+<p>
+
+`%i` parses the strings in the list as single-quoted strings.
+`%I` parses the strings in the list as double-quoted strings.
+
+
+</p>
+</details>
+
+---
+
+17. What does the following code return? `%w{ a b c d e f }[2, 3]`
+<details><summary><b>Answer</b></summary>
+<p>
+
+`["c", "d", "e"]`
+
+</p>
+</details>
+
+---
+
+18. What does the following code return? `%w{ a b c d e f }[5, 2]`
+<details><summary><b>Answer</b></summary>
+<p>
+
+`["f"]`
+
+</p>
+</details>
+
+---
+
+19. What does the following code return? `%w{ a b c d e f }[-3, 3]`
+<details><summary><b>Answer</b></summary>
+<p>
+
+`["d", "e", "f"]`
+
+</p>
+</details>
+
+---
+
+20. What does the following code return? `%w{ a b c d e f }[0..3]`
+<details><summary><b>Answer</b></summary>
+<p>
+
+`["a", "b", "c", "d"]`
+
+</p>
+</details>
+
+---
+
+21. What does the following code return? `%w{ a b c d e f }[4..-1]`
+<details><summary><b>Answer</b></summary>
+<p>
+
+`["e", "f"]`
+
+</p>
+</details>
+
+---
+
+22. What does the following code output?
+```ruby
+arr = ["eagle", 10, :d, "hello world"]
+arr[2] = "beast"
+p arr
+``` 
+<details><summary><b>Answer</b></summary>
+<p>
+
+`["eagle", 10, "beast", "hello world"]`
+
+</p>
+</details>
+
+---
+
+23. What does the following code return?
+```ruby
+arr = ["eagle", 10, :d, "hello world"]
+arr[3, 2] = [20, 30] 
+p arr
+```
+<details><summary><b>Answer</b></summary>
+<p>
+
+`arr = ["eagle", 10, :d, 20, 30]`
+
+</p>
+</details>
+
+---
+
+24. What does the following code output?
+```ruby
+arr = ["eagle", 10, :d, "hello world"]
+
+def alter_table(array)
+  array[3, 2] = [20, 30] 
+end
+
+alter_table(arr)
+p arr
+```
+<details><summary><b>Answer</b></summary>
+<p>
+
+`arr = ["eagle", 10, :d, 20, 30]`
+
+</p>
+</details>
+
+---
+
+25. What method can you use to insert an object at the beginning of an array?
+<details><summary><b>Answer</b></summary>
+<p>
+
+`unshift`
+
+</p>
+</details>
+
+---
+
+26. What method can you use to remove the object at the beginning of an array?
+<details><summary><b>Answer</b></summary>
+<p>
+
+`shift`
+
+</p>
+</details>
+
+---
+
+27. What methods can you use to insert an object at the end of an array? Name two.
+<details><summary><b>Answer</b></summary>
+<p>
+
+`push`, `<<`, `append`
+
+</p>
+</details>
+
+---
+
+28. What method can you use to remove the last object from an array?
+<details><summary><b>Answer</b></summary>
+<p>
+
+`pop`
+
+</p>
+</details>
+
+---
+
+29. What does the following code return? `[1, 2, 3].push([4, 5, 6])` 
+<details><summary><b>Answer</b></summary>
+<p>
+
+`[1, 2, 3, [4, 5, 6]]`
+
+</p>
+</details>
+
+---
+
+30. What does the following code return? `[1, 2, 3].concat([4, 5, 6])` 
+<details><summary><b>Answer</b></summary>
+<p>
+
+`[1, 2, 3, 4, 5, 6]`
+
+</p>
+</details>
+
+---
+
+31. Which of the following statements is true of the code below? Select all that apply.
+```ruby
+a = [1, 2, 3]
+b = [4, 5, 6]
+a.concat(b)
+```
+- A. `a` is modified.
+- B. `b` is modified.
+- C. Neither `a` or `b` are modified. A new object is created and returned.
+<details><summary><b>Answer</b></summary>
+<p>
+
+A
+
+</p>
+</details>
+
+---
+
+32. Which of the following statements is true of the code below? Select all that apply.
+```ruby
+a = [1, 2, 3]
+b = [4, 5, 6]
+a + b
+```
+- A. `a` is modified.
+- B. `b` is modified.
+- C. Neither `a` or `b` are modified. A new object is created and returned.
+<details><summary><b>Answer</b></summary>
+<p>
+
+C
+
+</p>
+</details>
+
+---
+
+33. What does the following code return? `[1, 2, 3].reverse`
+<details><summary><b>Answer</b></summary>
+<p>
+
+`[3, 2, 1]`
+
+</p>
+</details>
+
+---
+
+34. What does the following code return? `[1, 2, [3], [4, [5, [6]]]].flatten`
+<details><summary><b>Answer</b></summary>
+<p>
+
+`[1, 2, 3, 4, 5, 6]`
+
+</p>
+</details>
+
+---
+
+35. What does the following code return? `[1, 2, [3], [4, [5, [6]]]].flatten(1)`
+<details><summary><b>Answer</b></summary>
+<p>
+
+`[1, 2, 3, 4, [5, [6]]]`
+
+</p>
+</details>
+
+---
+
+36. What does the following code return? `[1, 2, [3], [4, [5, [6]]]].flatten(2)`
+<details><summary><b>Answer</b></summary>
+<p>
+
+`[1, 2, 3, 4, 5, [6]]`
+
+</p>
+</details>
+
+---
+
+37. What does the following code return? `["pizza", :abc, 33].join`
+<details><summary><b>Answer</b></summary>
+<p>
+
+`"pizzaabc33"`
+
+</p>
+</details>
+
+---
+
+38. What does the following code return? `["pizza", :abc, 33].join(", ")`
+<details><summary><b>Answer</b></summary>
+<p>
+
+`"pizza, abc, 33"`
+
+</p>
+</details>
+
+---
+
+39. What does the following code return? `["pizza", :abc, 33] * "-"`
+<details><summary><b>Answer</b></summary>
+<p>
+
+`"pizza-abc-33"`
+
+</p>
+</details>
+
+---
+
+40. What does the following code return? `[3, 4, 4, 5, 5, 4, 3].uniq`
+<details><summary><b>Answer</b></summary>
+<p>
+
+`[3, 4, 5]`
+
+</p>
+</details>
+
+---
+
+41. What `Array` method can you use to return a new array identical to the original array, with all occurrences of `nil` removed? e.g., `[12, 3, nil, 4, nil].method => [12, 3, 4]`
+<details><summary><b>Answer</b></summary>
+<p>
+
+`compact`
+
+</p>
+</details>
+
+---
+
+42. What Array method can you use to return the number of elements in the array?
+<details><summary><b>Answer</b></summary>
+<p>
+
+`size` or `length`
+
+</p>
+</details>
+
+---
+
+43. What `Array` method can you use to return `true` if the caller is an empty array and `false` otherwise?
+<details><summary><b>Answer</b></summary>
+<p>
+
+`empty?`
+
+</p>
+</details>
+
+---
+
+44. What `Array` method can you use to return `true` if the array includes at least one occurrence of the item, and `false` otherwise? e.g., `[1, 2, 3].method(2) => true`
+<details><summary><b>Answer</b></summary>
+<p>
+
+`include?`
+
+</p>
+</details>
+
+---
+
+45. What `Array` method can you use to return the number of occurrences of the item in the array? e.g., `[1, 2, 3, 4, 4].method(4) => 2`
+<details><summary><b>Answer</b></summary>
+<p>
+
+`count`
+
+</p>
+</details>
+
+---
+
+46. What `Array` method can you use to return the first n items in the array?
+<details><summary><b>Answer</b></summary>
+<p>
+
+`take` or `first`
+
+</p>
+</details>
+
+---
+
+47. What `Array` method can you use to return the last n items in the array?
+<details><summary><b>Answer</b></summary>
+<p>
+
+`last`
+
+</p>
+</details>
+
+---
+
+48. What `Array` method can you use to return n random elements from the array, where the maximum number of elements returned is equal to the number of items in the array (sampling without replacement)?
+
+<details><summary><b>Answer</b></summary>
+<p>
+
+`sample`
+
+</p>
+</details>
 
 # Hashes
 
