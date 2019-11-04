@@ -2915,7 +2915,7 @@ True
 
 ---
 
-4. Use a literal constructor to instantiate a `Hash` with key:value pairs ("New York", "NY") and ("Los Angeles", "CA").
+4. Use a literal constructor to instantiate a `Hash` with key:value pairs (`"New York"`, `"NY"`) and (`"Los Angeles"`, `"CA"`).
 <details><summary><b>Answer</b></summary>
 <p>
 
@@ -2926,7 +2926,7 @@ True
 
 ---
 
-5. Use a literal constructor to instantiate a `Hash` with key:value pairs (:abc, 1), (:def, 2). Do this in two ways.
+5. Use a literal constructor to instantiate a `Hash` with key:value pairs (`:abc`, `1`), (`:def`, `2`). Do this in two ways.
 <details><summary><b>Answer</b></summary>
 <p>
 
@@ -4144,7 +4144,7 @@ C
 
 ---
 
-3. Create a hash with key and value pairs ("one","a"), ("two","b") using the `Hash.[]` method.
+3. Create a hash with key and value pairs (`"one"`,`"a"`), (`"two"`,`"b"`) using the `Hash.[]` method.
 <details><summary><b>Answer</b></summary>
 <p>
 
@@ -4155,7 +4155,7 @@ C
 
 ---
 
-4. Create a hash with key and value pairs (:a: 12), (:b, 30) using the literal constructor and hash rockets. (`=>`) 
+4. Create a hash with key and value pairs (`:a`: `12`), (`:b`, `30`) using the literal constructor and hash rockets. (`=>`) 
 <details><summary><b>Answer</b></summary>
 <p>
 
@@ -4166,7 +4166,7 @@ C
 
 ---
 
-5. Create a hash with key and value pairs (:a: 12), (:b, 30) using the literal constructor and the syntactical sugar for symbol keys.
+5. Create a hash with key and value pairs (`:a`: `12`), (`:b`, `30`) using the literal constructor and the syntactical sugar for symbol keys.
 <details><summary><b>Answer</b></summary>
 <p>
 
